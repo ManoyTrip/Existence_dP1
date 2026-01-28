@@ -1,0 +1,274 @@
+/* renamed:
+- Sort_seq_by_multiplicity -> sort_seq_by_multiplicity
+- Orbit_type -> orbit_type
+
+/* Returns true if the given orbit consists of skew curves (according to the intersection matrix M). */
+is_skew := function(orbit, M)
+ for i in orbit do
+  for j in orbit do
+   if i ne j and M[i,j] ne 0 then
+    return false;
+   end if;
+  end for;
+ end for;
+ return true;
+end function;
+
+/* given sets of orbits Sa, Sb, returns a set consisting of skew orbits that are unions 
+   of an orbit in Sa and an orbit in Sb (using intersection matrix M)*/ 
+combine_skew_orbits := function(i, Sa, Sb, Si, M)
+ for o in Sa do
+  for l in Sb do
+   oAdd := o join l;
+   if (#oAdd eq i) and is_skew(oAdd, M) then
+    Include(~Si, oAdd);
+   end if;
+  end for;
+ end for;
+ return Si;
+end function;
+
+/* given a positive integer i and a set Si, computes skew orbits of size i in "orbits" and appends to Si (using intersection matrix M) */
+add_skew_orbits := function(i, Si, orbits, M)
+  for o in orbits do
+    if #o eq i then
+      if is_skew(o, M) then
+        Include(~Si, Set(o));
+      end if;
+    end if;
+  end for;
+  return Si;
+end function;
+
+/* Determines the index from the collection of orbits together with the intersection matrix M and a list of orbit lengths orbitList.*/
+determine_index := function(deg, orbits, orbitList, M)
+  /* We look for skew orbits in order to calculate the index
+     We first assume that the index is 0, then keep increasing it as we find skew orbits of larger length*/
+  index := 0;
+  
+  /* We check if index geq 1, and make a list S1 of all lines that form orbits of size 1 */
+  S1 := {};
+  if 1 in orbitList then
+    for o in orbits do
+      if #o eq 1 then
+        Include(~S1, Set(o));
+      end if;
+    end for;
+  end if;
+
+  if (not IsEmpty(S1)) then
+    index := 1;
+  end if;
+
+  /* Artificial condition to take out computationally heavy cases*/
+  if (deg eq 1) and (#S1 ge 26) then
+    index := 8;
+    return index;
+  end if;
+ 
+  /* We check if index geq 2, and make a list of all Frob-exceptional sets of size 2 */
+  S2 := {};
+  S2 := combine_skew_orbits(2, S1, S1, S2, M);
+  if 2 in orbitList then
+    S2 := add_skew_orbits(2, S2, orbits, M);
+  end if;
+
+  if (not IsEmpty(S2)) then
+    index := 2;
+  end if;
+
+  /* We check if index geq 3, and make a list of all Frob-exceptional sets of size 3 */
+  S3 := {};
+  S3 := combine_skew_orbits(3, S2, S1, S3, M);
+  if 3 in orbitList then
+    S3 := add_skew_orbits(3, S3, orbits, M);
+  end if;
+    
+  if (not IsEmpty(S3)) then
+    index := 3;
+  end if;
+
+
+  /* We check if index geq 4, and make a list of all Frob-exceptional sets of size 4 */
+  S4 := {};
+  S4 := combine_skew_orbits(4, S3, S1, S4, M);
+  if 2 in orbitList then
+    S4 := combine_skew_orbits(4, S2, S2, S4, M);
+  end if;
+  if 4 in orbitList then
+    S4 := add_skew_orbits(4, S4, orbits, M);
+  end if;
+
+  if (not IsEmpty(S4)) then
+    index := 4;
+  end if;
+
+
+  /* We check if index geq 5, and make a list of all Frob-exceptional sets of size 5 */
+  S5 := {};
+  S5 := combine_skew_orbits(5, S4, S1, S5, M);
+ 
+  if 3 in orbitList then
+    S5 := combine_skew_orbits(5, S3, S2, S5, M);
+  end if;
+ 
+  if 5 in orbitList then
+    S5 := add_skew_orbits(5, S5, orbits, M);
+  end if;
+
+  if (not IsEmpty(S5)) then
+    index := 5;
+  end if;
+
+  /* We check if index geq 6, and make a list of all Frob-exceptional sets of size 6 */
+  S6 := {};
+  S6 := combine_skew_orbits(6, S5, S1, S6, M);
+ 
+  if (4 in orbitList) or (2 in orbitList) then
+    S6 := combine_skew_orbits(6, S4, S2, S6, M);
+  end if;
+
+  if 3 in orbitList then
+    S6 := combine_skew_orbits(6, S3, S3, S6, M);
+  end if;
+
+  if 6 in orbitList then
+    S6 := add_skew_orbits(6, S6, orbits, M);
+  end if;
+
+  if (not IsEmpty(S6)) then
+    index := 6;
+  end if;
+
+  /* We check if index geq 7, and make a list of all Frob-exceptional sets of size 7 */
+  S7 := {};
+  S7 := combine_skew_orbits(7, S6, S1, S7, M);
+ 
+  if (5 in orbitList) or (2 in orbitList) then
+    S7 := combine_skew_orbits(7, S5, S2, S7, M);
+  end if;
+
+  if (4 in orbitList) or (2 in orbitList) then
+    S7 := combine_skew_orbits(7, S4, S3, S7, M);
+  end if;
+  
+  if 7 in orbitList then
+    S7 := add_skew_orbits(7, S7, orbits, M);
+  end if;
+
+  if (not IsEmpty(S7)) then
+    index := 7;
+  end if;
+
+  if deg eq 1 then
+    /* We check if index geq 8, and make a list of all Frob-exceptional sets of size 8 */
+    S8 := {};
+    S8 := combine_skew_orbits(8, S7, S1, S8, M);
+    
+    if (not IsEmpty(S8)) then
+      index := 8;
+      return index;
+    end if;
+
+    if (6 in orbitList) or (2 in orbitList) then
+      S8 := combine_skew_orbits(8, S6, S2, S8, M);
+    end if;
+
+    if (5 in orbitList) or (2 in orbitList) then
+      S8 := combine_skew_orbits(8, S5, S3, S8, M);
+    end if;
+ 
+    if 4 in orbitList then
+      S8 := combine_skew_orbits(8, S4, S4, S8, M);
+    end if;
+ 
+    if 8 in orbitList then
+      S8 := add_skew_orbits(8, S8, orbits, M);
+    end if;
+ 
+    if (not IsEmpty(S8)) then
+      index := 8;
+    end if;
+  end if;
+  return index;
+end function;
+
+/* Given a skew orbit, it contracts it and displays the new orbit type of the del Pezzo surface thus obtained. */
+contract_orbit := function(skewOrbit, orbits, M)
+ if is_skew(skewOrbit, M) then
+  newOrbitSet := [];
+   for O in orbits do
+     newOrbit := [];
+     for o in O do
+     keep := true;
+     for i in skewOrbit do
+       if o eq i or M[i,o] ge 1 then
+        keep := false; 
+        /* Keep o iff it does not meet a curve in the skew orbit. */
+       end if;
+     end for;
+     if keep then
+      Append(~newOrbit, o);
+     end if;
+    end for;
+    if not IsEmpty(newOrbit) then
+       Append(~newOrbitSet, newOrbit);
+    end if;
+  end for;
+ end if;
+return newOrbitSet;
+end function;
+
+
+/* Constructs the characteristic sequence given by the orbit O. 
+This is the sequence of intersection numbers of the vertices in the graph with the vertex */
+char_seq := function(g,O,M)
+ o1:=O[1];
+ out:=[];
+ for n in [0..#O-1] do
+  o:=o1^(g^n);
+  if o ne o1 then
+   out:=Append(out, M[o1,o]);
+  end if;
+ end for;
+ return out;
+end function;
+
+/* Constructs a multiset containing the intersection patterns of each orbit in "orbits"*/
+intersection_pattern := function(g, orbits, M)
+  typesMultiplicity := {* *};
+  for o in orbits do
+    if #o ne 1 then
+      seq:=char_seq(g,o,M);
+      Include(~typesMultiplicity, seq);
+    else
+      seq := Prune([1]);
+      Include(~typesMultiplicity, seq);
+    end if;
+  end for;
+  return typesMultiplicity;
+end function;
+
+
+orbit_type := function(orbits)
+ T:=[];
+ for o in orbits do
+  T:=Append(T,#o);
+ end for;
+ Sort(~T);
+ return T;
+end function;
+
+/* This function takes as input two orbit sequences x and y. The output is negative when x 
+   is less than y, positive when y is less than x, and zero if they are equal. If the orbits have the 
+   same length, we order by multiplicity in multiplicityList */
+sort_seq_by_multiplicity := function(x, y, multiplicityList)
+  if (#x-#y) eq 0 then
+    temp := Multiplicity(multiplicityList, x) - Multiplicity(multiplicityList, y);
+    return temp; 
+  else
+    return #x - #y;
+  end if;
+end function;
+
+
