@@ -1,0 +1,55 @@
+P<q> := PolynomialRing(IntegerRing());
+PP<sqrtq> := PolynomialRing(RealField());
+pointsOnLinesUpperBound := [];
+numberRatlPtsdP2 := [];
+badLocusUpperBoundOdd := [];
+badLocusUpperBoundEven := [];
+outsideBadLocusOdd := [];
+outsideBadLocusEven := [];
+solutionEven := []; 
+solutionOdd := [];
+
+for i in [1..60] do
+  pointsOnLinesTemp := 0;
+  oSet := MultisetToSet(orbitIntersectionsListdP2[i]);
+  for orb in oSet do
+    if #orb eq 0 then
+      pointsOnLinesTemp := pointsOnLinesTemp + (q+1)*Multiplicity(orbitIntersectionsListdP2[i], orb);
+    elif Minimum(orb) ge 1 then
+      pointsOnLinesTemp := pointsOnLinesTemp + Minimum(orb)*Multiplicity(orbitIntersectionsListdP2[i], orb);
+    end if;
+  end for;
+  pointsOnLinesUpperBound[i] := pointsOnLinesTemp;
+  numberRatlPtsdP2[i] := q^2 + traceListdP2[i]*q + 1;
+  badLocusUpperBoundOdd[i] := Evaluate(pointsOnLinesUpperBound[i], sqrtq^2) + sqrtq^2 + 6*sqrtq + 1;
+  badLocusUpperBoundEven[i] := pointsOnLinesUpperBound[i] + 2*(q + 1);
+  outsideBadLocusOdd[i] := Evaluate(numberRatlPtsdP2[i], sqrtq^2) - badLocusUpperBoundOdd[i] - 1;
+  outsideBadLocusEven[i] := numberRatlPtsdP2[i] - badLocusUpperBoundEven[i] - 1;
+  a := Coefficient(outsideBadLocusEven[i], 2);
+  b := Coefficient(outsideBadLocusEven[i], 1);
+  c := Coefficient(outsideBadLocusEven[i], 0);
+  solutionEven[i] := Ceiling(-b + Sqrt(b^2 - 4*a*c)/(2*a));
+  j := 1;
+  while 2^j lt solutionEven[i] do
+    j := j+1;
+  end while;
+  solutionEven[i] := 2^j;
+  roots := Roots(outsideBadLocusOdd[i]);
+  solutionOdd[i] := Maximum(3, Ceiling((Maximum(roots[1][1], roots[2][1]))^2));
+  while not(#Factorization(solutionOdd[i]) eq 1) or IsEven(solutionOdd[i]) do
+    solutionOdd[i] := solutionOdd[i] + 1;
+  end while;
+end for;
+
+
+for i in [1..112] do
+  ind := Index(dp2blowupin1pt, i);
+  if ind gt 0 then
+    printf "%o \& $q \\geq %o, %o$\\\\ \n", i, solutionEven[ind], solutionOdd[ind];
+  end if;
+end for;
+
+/*Latex table formatting */
+for i in [31..60] do
+  printf "%o \& %o \& \$%o\$ \& \$%o\$ \\\\ \n", i, dp2blowupin1pt[i], numberRatlPtsdP2[i], pointsOnLinesUpperBound[i];
+end for;
