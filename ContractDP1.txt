@@ -1,0 +1,39 @@
+/* This function 
+*/
+
+/****************************************************************************/
+
+/*input: 
+    e: the Galois group acting on the set of lines
+    gen: A generator of e
+    M1: the intersection matrix of the lines
+e.g., after running the E8 code: */
+
+/* this will be a sequence where the ith position contains the nr (Urabe numbering) 
+   of the type of dP1 obtained from blowing up a point in general position on a dP2 
+   of type i(Urabe numbering) */
+dp2blowupin1pt := [];
+dp1typeblowdown := [];
+
+for i in [1..112] do
+  gen := GenListdP1[i];
+  orbitsDP1 := Orbits(GroupListdP1[i]);
+
+  for O in orbitsDP1 do
+    if #O eq 1 then
+      orbitsDP2 := contract_orbit(O, orbitsDP1, M1);
+      multiplicitiesDP2 := intersection_pattern(gen, orbitsDP2, M1);
+      typeDP2 := Position(OrbitIntersectionsListdP2, multiplicitiesDP2);
+      dp1typeblowdown[i] := typeDP2;
+      if typeDP2 gt 0 then
+        dp2blowupin1pt[typeDP2] := i;
+      end if;
+    end if;
+  end for;
+end for;
+dp2blowupin1pt;
+
+/*Latex table formatting */
+for i in [1..60] do
+  printf "%o \& %o \& %o \\\\ \n", i, dp2blowupin1pt[i], ;
+end for;

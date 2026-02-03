@@ -1,6 +1,8 @@
 /* renamed:
 - Sort_seq_by_multiplicity -> sort_seq_by_multiplicity
 - Orbit_type -> orbit_type
+- g -> gen
+- O/o -> orb
 
 /* Returns true if the given orbit consists of skew curves (according to the intersection matrix M). */
 is_skew := function(orbit, M)
@@ -14,7 +16,7 @@ is_skew := function(orbit, M)
  return true;
 end function;
 
-/* given sets of orbits Sa, Sb, returns a set consisting of skew orbits that are unions 
+/* given sets of orbits Sa, Sb, returns a set consisting of skew orbits of size i that are unions 
    of an orbit in Sa and an orbit in Sb (using intersection matrix M)*/ 
 combine_skew_orbits := function(i, Sa, Sb, Si, M)
  for o in Sa do
@@ -28,7 +30,7 @@ combine_skew_orbits := function(i, Sa, Sb, Si, M)
  return Si;
 end function;
 
-/* given a positive integer i and a set Si, computes skew orbits of size i in "orbits" and appends to Si (using intersection matrix M) */
+/* given a positive integer i and a set Si, finds skew orbits of size i in "orbits" and appends to Si (using intersection matrix M) */
 add_skew_orbits := function(i, Si, orbits, M)
   for o in orbits do
     if #o eq i then
@@ -220,13 +222,13 @@ return newOrbitSet;
 end function;
 
 
-/* Constructs the characteristic sequence given by the orbit O. 
-This is the sequence of intersection numbers of the vertices in the graph with the vertex */
-char_seq := function(g,O,M)
- o1:=O[1];
+/* Constructs the characteristic sequence given by the orbit "orb". 
+This is the sequence of intersection numbers of the lines in "orb", starting from one element and considering its intersection with its consecutive Frobenius images*/
+char_seq := function(gen, orb, M)
+ o1:=orb[1];
  out:=[];
- for n in [0..#O-1] do
-  o:=o1^(g^n);
+ for n in [0..#orb-1] do
+  o:=o1^(gen^n);
   if o ne o1 then
    out:=Append(out, M[o1,o]);
   end if;
@@ -235,11 +237,11 @@ char_seq := function(g,O,M)
 end function;
 
 /* Constructs a multiset containing the intersection patterns of each orbit in "orbits"*/
-intersection_pattern := function(g, orbits, M)
+intersection_pattern := function(gen, orbits, M)
   typesMultiplicity := {* *};
-  for o in orbits do
-    if #o ne 1 then
-      seq:=char_seq(g,o,M);
+  for orb in orbits do
+    if #orb ne 1 then
+      seq:=char_seq(gen, orb, M);
       Include(~typesMultiplicity, seq);
     else
       seq := Prune([1]);
@@ -252,8 +254,8 @@ end function;
 
 orbit_type := function(orbits)
  T:=[];
- for o in orbits do
-  T:=Append(T,#o);
+ for orb in orbits do
+  T:=Append(T,#orb);
  end for;
  Sort(~T);
  return T;

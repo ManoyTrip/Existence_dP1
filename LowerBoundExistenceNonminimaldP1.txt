@@ -50,6 +50,6 @@ for i in [1..112] do
 end for;
 
 /*Latex table formatting */
-for i in [31..60] do
+for i in [1..60] do
   printf "%o \& %o \& \$%o\$ \& \$%o\$ \\\\ \n", i, dp2blowupin1pt[i], numberRatlPtsdP2[i], pointsOnLinesUpperBound[i];
 end for;
