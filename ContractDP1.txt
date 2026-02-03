@@ -1,39 +1,51 @@
-/* This function blabla
-*/
-
-/****************************************************************************/
-
 /*input: 
-    e: the Galois group acting on the set of lines
-    gen: A generator of e
-    M1: the intersection matrix of the lines
-e.g., after running the E8 code: */
+    GenListdP1
+    GroupListdP1
+    multiplicitiesDP2
+e.g., after running the E7 and E8 file */
 
-/* this will be a sequence where the ith position contains the nr (Urabe numbering) 
+/* We produce a sequence "dP2Blowup1pt" where the ith position contains the nr (Urabe numbering) 
    of the type of dP1 obtained from blowing up a point in general position on a dP2 
    of type i(Urabe numbering) */
-dp2blowupin1pt := [];
-dp1typeblowdown := [];
+dP2Blowup1pt := [];
+dP1TypeBlowdown := [];
 
 for i in [1..112] do
   gen := GenListdP1[i];
   orbitsDP1 := Orbits(GroupListdP1[i]);
-
+  dP1TypeBlowdown[i] := { };
+  /*For each line which is defined over the base field, we determine which type of DP2 is obtained upon contracting     this line.*/
   for O in orbitsDP1 do
     if #O eq 1 then
       orbitsDP2 := contract_orbit(O, orbitsDP1, M1);
       multiplicitiesDP2 := intersection_pattern(gen, orbitsDP2, M1);
       typeDP2 := Position(OrbitIntersectionsListdP2, multiplicitiesDP2);
-      dp1typeblowdown[i] := typeDP2;
-      if typeDP2 gt 0 then
-        dp2blowupin1pt[typeDP2] := i;
-      end if;
+      Append(~dP1TypeBlowdown[i], typeDP2);
     end if;
   end for;
 end for;
-dp2blowupin1pt;
+
+uniqueBlowup := true;
+for i in [1..60] do
+  cnt := 0;
+  for j in [1..#dP1TypeBlowdown] do
+    if i in dP1TypeBlowdown[j] then
+      cnt := cnt + 1;
+      dP2Blowup1pt[i] := j;
+    end if;
+  end for;
+  
+  /*We check that every type of dP2 blows up to a unique type of dP1*/
+  if cnt gt 1 then
+    uniqueBlowup := false;
+  end if;
+end for;
+
+    
+  
+    
 
 /*Latex table formatting */
 for i in [1..60] do
-  printf "%o \& %o \& %o \\\\ \n", i, dp2blowupin1pt[i], ;
+  printf "%o \& %o \& %o \\\\ \n", i, dP2Blowup1pt[i], ;
 end for;
