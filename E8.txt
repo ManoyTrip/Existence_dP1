@@ -10,7 +10,7 @@ Changes compared to v7:
 /************************** Degree 1 *******************************
 *                                                                  *
 *******************************************************************/
-/*This code assumes the code in "ModuleE6E7E8.m" (or "ModuleE6E7E8_noAIM") has been executed, such that "we8"and the representation "Rwe8" have been computed.
+/*This code assumes the code in "ModuleE6E7E8.m" has been executed, such that "we8"and the representation "Rwe8" have been computed.
   It also assumes execution of the file "Functions_v7.m"
   We pick q_roots a prime power large enough such that all roots of unity needed for the eigenvalues of the Frobenius actions exist in F_q*/
 q_roots := 2521;
@@ -52,7 +52,7 @@ orb := Orbits(we8, GSet(we8, subs2));
 /* 15120 -> lines intersecting 1 time*/
 
 
-/* Check that orb[3] contains pairs of lines that intersect twice, using Lemma 2.7(ii) in vLW */
+/* Check that orb[3] contains pairs of lines that intersect twice, using Lemma 2.7(ii) in Van Luijk--Winter (2022): https://arxiv.org/pdf/1906.03162  */
 /*
 set := orb[3];
 size := #set;
@@ -171,7 +171,7 @@ for i in [1..numberOfClasses] do
   types := SetToSequence(types);
 
   /* This function takes as input two orbit intersection patterns x and y. If the orbits have the 
-     same length, we order by multiplicity in MultiplicityList
+     same length, we order by multiplicity in typesMultiplicity
      The output is negative when x 
      is less than y, positive when y is less than x, and zero if they are equal. */  
 

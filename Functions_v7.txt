@@ -262,8 +262,9 @@ orbit_type := function(orbits)
 end function;
 
 /* This function takes as input two orbit sequences x and y. The output is negative when x 
-   is less than y, positive when y is less than x, and zero if they are equal. If the orbits have the 
-   same length, we order by multiplicity in multiplicityList */
+   is smaller than y, positive when y is smaller than x, and zero if they are of the same "size". 
+We order by length of the orbit. If the orbits have the 
+   same length, we order by multiplicity in multiplicityList. If they moreover have the same multiplicity, they are considered of equal size. */
 sort_seq_by_multiplicity := function(x, y, multiplicityList)
   if (#x-#y) eq 0 then
     temp := Multiplicity(multiplicityList, x) - Multiplicity(multiplicityList, y);

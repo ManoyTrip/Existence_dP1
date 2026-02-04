@@ -4,9 +4,9 @@
     multiplicitiesDP2
 e.g., after running the E7 and E8 file */
 
-/* We produce a sequence "dP2Blowup1pt" where the ith position contains the nr (Urabe numbering) 
+/* We produce a sequence "dP2Blowup1pt" where the i-th position contains the number (Urabe numbering) 
    of the type of dP1 obtained from blowing up a point in general position on a dP2 
-   of type i(Urabe numbering) */
+   of type i (Urabe numbering) */
 dP2Blowup1pt := [];
 dP1TypeBlowdown := [];
 
