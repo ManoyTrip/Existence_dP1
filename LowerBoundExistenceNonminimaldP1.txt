@@ -33,7 +33,13 @@ for i in [1..60] do
   /* When "outsideBadLocusOdd" is positive, there is at least one rational point outside of the bad locus. Using that outsideBadLocusOdd[i] has two roots, we pick the largest one. The function is increasing, so for q above this value, there are points outside the bad locus. */ 
   outsideBadLocusOdd[i] := Evaluate(numberRatlPtsdP2[i], sqrtq^2) - badLocusUpperBoundOdd[i] - 1;
   roots := Roots(outsideBadLocusOdd[i]);
-  solutionOdd[i] := Maximum(3, Ceiling((Maximum(roots[1][1], roots[2][1]))^2));
+  maxroot := 3;
+  for root in roots do
+    if root[1] gt 0 and (root[1])^2 gt maxroot then
+      maxroot := (root[1])^2;
+    end if;
+  end for;
+  solutionOdd[i] := maxroot;
   while not(#Factorization(solutionOdd[i]) eq 1) or IsEven(solutionOdd[i]) do
     solutionOdd[i] := solutionOdd[i] + 1;
   end while;
