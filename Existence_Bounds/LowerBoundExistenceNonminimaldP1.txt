@@ -1,3 +1,7 @@
+/* This Magma code accompanies the article M.T. Trip - Existence of Minimal del Pezzo Surfaces of Degree 1 with Conic Bundles over Finite Fields.*/
+
+/*******************************************************************/
+
 P<q> := PolynomialRing(IntegerRing());
 PP<sqrtq> := PolynomialRing(RealField());
 pointsOnLinesUpperBound := [];
@@ -11,26 +15,25 @@ solutionOdd := [];
 
 for i in [1..60] do
   /* We compute the maximal number of rational points that can lie on the lines on the dP2*/
-  pointsOnLinesTemp := 0;
-  oSet := MultisetToSet(orbitIntersectionsListdP2[i]);
-  for orb in oSet do
+  pointsOnLinesUpperBound[i] := 0;
+  for orb in orbitIntersectionsListdP2[i] do
     /* Every orbit of size 1 corresponds to a rational line, which contains q+1 rational points */
     if #orb eq 0 then
-      pointsOnLinesTemp := pointsOnLinesTemp + (q+1)*Multiplicity(orbitIntersectionsListdP2[i], orb);
+      pointsOnLinesUpperBound[i] := pointsOnLinesUpperBound[i] + (q+1);
 
     /* If in an orbit with multiple lines, the lines contain a rational point, then this point is a point of intersection of all lines (it is fixed by Galois). Therefore, the number of rational points on the lines is bounded above by the minimum of the intersection numbers between the lines.*/
     elif Minimum(orb) ge 1 then
-      pointsOnLinesTemp := pointsOnLinesTemp + Minimum(orb)*Multiplicity(orbitIntersectionsListdP2[i], orb);
+      pointsOnLinesUpperBound[i] := pointsOnLinesUpperBound[i] + Minimum(orb);
     end if;
   end for;
-  pointsOnLinesUpperBound[i] := pointsOnLinesTemp;
+
   numberRatlPtsdP2[i] := q^2 + traceListdP2[i]*q + 1;
   
-  /* The bad locus consists of the points that lie on the lines + the points that lie on the ramification divisor. If q is odd, this is a quartic (genus 3 curve, use Hasse-Weil upper bound). If q is even, this is a union of two conics (genus 0 curves).*/
+  /* The bad locus consists of the points that lie on the lines + the points that lie on the ramification divisor. If q is odd, this is a quartic (genus 3 curve, we use Hasse-Weil upper bound). If q is even, this is a union of two conics (genus 0 curves).*/
   badLocusUpperBoundOdd[i] := Evaluate(pointsOnLinesUpperBound[i], sqrtq^2) + sqrtq^2 + 6*sqrtq + 1;
   badLocusUpperBoundEven[i] := pointsOnLinesUpperBound[i] + 2*(q + 1);
 
-  /* When "outsideBadLocusOdd" is positive, there is at least one rational point outside of the bad locus. Using that outsideBadLocusOdd[i] has two roots, we pick the largest one. The function is increasing, so for q above this value, there are points outside the bad locus. */ 
+  /* We compute a lower bound "outsideBadLocusOdd" for the number of rational points outside the bad locus, in case q is odd. If this number is positive, there is at least one rational point outside of the bad locus. We pick the largest root of outsideBadLocusOdd[i]. The function is increasing, so for q above this value, there are points outside the bad locus. */ 
   outsideBadLocusOdd[i] := Evaluate(numberRatlPtsdP2[i], sqrtq^2) - badLocusUpperBoundOdd[i] - 1;
   roots := Roots(outsideBadLocusOdd[i]);
   maxroot := 3;
@@ -46,10 +49,14 @@ for i in [1..60] do
 
   /* When "outsideBadLocusEven" is positive, there is at least one rational point outside of the bad locus. Using that outsideBadLocusEven[i] has two roots, we pick the largest one. The function is increasing, so for q above this value, there are points outside the bad locus. */ 
   outsideBadLocusEven[i] := numberRatlPtsdP2[i] - badLocusUpperBoundEven[i] - 1;
-  a := Coefficient(outsideBadLocusEven[i], 2);
-  b := Coefficient(outsideBadLocusEven[i], 1);
-  c := Coefficient(outsideBadLocusEven[i], 0);
-  solutionEven[i] := Ceiling(-b + Sqrt(b^2 - 4*a*c)/(2*a));
+  roots := Roots(outsideBadLocusEven[i]);
+  maxroot := 2;
+  for root in roots do
+    if root[1] gt maxroot then
+      maxroot := root[1];
+    end if;
+  end for;
+  
   j := 1;
   while 2^j lt solutionEven[i] do
     j := j+1;

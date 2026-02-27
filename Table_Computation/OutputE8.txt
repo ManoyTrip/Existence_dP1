@@ -1,0 +1,1785 @@
+1. 
+Subgroup order: 4. Measure^(-1): 15360
+Orbits: 2^30 4^45 
+Intersection types between lines in orbit:
+  2^10 [ 1 ] 
+  2^20 [ 3 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 0, 1, 0 ] 
+  4^10 [ 2, 1, 2 ] 
+  4^32 [ 2, 0, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 1, 2, 2, 2, 2, 2, 4, 4 ] 
+Picard rank = 2 
+Trace = -3 
+2. 
+Subgroup order: 12. Measure^(-1): 192
+Orbits: 2^6 4^15 6^8 12^10 
+Intersection types between lines in orbit:
+  2^2 [ 3 ] 
+  2^4 [ 1 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 0, 1, 0 ] 
+  4^4 [ 2, 1, 2 ] 
+  4^8 [ 2, 0, 2 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^2 [ 0, 0, 1, 0, 0 ] 
+  6^5 [ 2, 0, 3, 0, 2 ] 
+  12^2 [ 1, 2, 2, 0, 1, 1, 1, 0, 2, 2, 1 ] 
+  12^8 [ 1, 1, 2, 0, 1, 0, 1, 0, 2, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 1, 2, 2, 2, 4, 4, 6, 6 ] 
+Picard rank = 2 
+Trace = 0 
+3. 
+Subgroup order: 4. Measure^(-1): 768
+Orbits: 2^2 4^59 
+Intersection types between lines in orbit:
+  2^2 [ 1 ] 
+  4^6 [ 2, 1, 2 ] 
+  4^6 [ 0, 1, 0 ] 
+  4^15 [ 1, 3, 1 ] 
+  4^32 [ 1, 2, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 1, 2, 4, 4, 4, 4, 4, 4 ] 
+Picard rank = 2 
+Trace = 1 
+4. 
+Subgroup order: 8. Measure^(-1): 384
+Orbits: 2^12 8^27 
+Intersection types between lines in orbit:
+  2^6 [ 3 ] 
+  2^6 [ 1 ] 
+  8^1 [ 0, 1, 2, 3, 2, 1, 0 ] 
+  8^1 [ 2, 1, 0, 3, 0, 1, 2 ] 
+  8^1 [ 1, 1, 1, 3, 1, 1, 1 ] 
+  8^2 [ 0, 0, 0, 1, 0, 0, 0 ] 
+  8^6 [ 2, 0, 2, 1, 2, 0, 2 ] 
+  8^8 [ 2, 0, 1, 1, 1, 0, 2 ] 
+  8^8 [ 1, 0, 2, 1, 2, 0, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 1, 2, 2, 2, 8, 8, 8, 8 ] 
+Picard rank = 2 
+Trace = -1 
+5. 
+Subgroup order: 12. Measure^(-1): 24
+Orbits: 2^2 4^2 12^19 
+Intersection types between lines in orbit:
+  2^2 [ 1 ] 
+  4^2 [ 1, 2, 1 ] 
+  12^1 [ 2, 1, 1, 1, 0, 3, 0, 1, 1, 1, 2 ] 
+  12^1 [ 1, 2, 1, 0, 1, 3, 1, 0, 1, 2, 1 ] 
+  12^1 [ 1, 0, 1, 2, 1, 3, 1, 2, 1, 0, 1 ] 
+  12^1 [ 0, 1, 1, 1, 2, 3, 2, 1, 1, 1, 0 ] 
+  12^1 [ 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1 ] 
+  12^2 [ 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 ] 
+  12^2 [ 2, 0, 2, 0, 2, 1, 2, 0, 2, 0, 2 ] 
+  12^2 [ 2, 0, 1, 1, 0, 2, 0, 1, 1, 0, 2 ] 
+  12^2 [ 1, 0, 1, 1, 1, 2, 1, 1, 1, 0, 1 ] 
+  12^2 [ 0, 0, 1, 1, 2, 2, 2, 1, 1, 0, 0 ] 
+  12^4 [ 1, 1, 1, 0, 1, 2, 1, 0, 1, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 1, 2, 4, 4, 12, 12, 12, 12 ] 
+Picard rank = 2 
+Trace = 1 
+6. 
+Subgroup order: 20. Measure^(-1): 40
+Orbits: 4^5 10^6 20^8 
+Intersection types between lines in orbit:
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 0, 1, 0 ] 
+  4^2 [ 2, 0, 2 ] 
+  10^1 [ 2, 1, 1, 0, 3, 0, 1, 1, 2 ] 
+  10^1 [ 1, 2, 0, 1, 3, 1, 0, 2, 1 ] 
+  10^1 [ 1, 0, 2, 1, 3, 1, 2, 0, 1 ] 
+  10^1 [ 0, 1, 1, 2, 3, 2, 1, 1, 0 ] 
+  10^2 [ 0, 0, 0, 0, 1, 0, 0, 0, 0 ] 
+  20^2 [ 1, 2, 0, 0, 2, 1, 0, 1, 1, 0, 1, 1, 0, 1, 2, 0, 0, 2, 1 ] 
+  20^2 [ 1, 2, 1, 0, 2, 2, 1, 0, 1, 1, 1, 0, 1, 2, 2, 0, 1, 2, 1 ] 
+  20^2 [ 1, 1, 1, 0, 2, 1, 1, 0, 1, 0, 1, 0, 1, 1, 2, 0, 1, 1, 1 ] 
+  20^2 [ 0, 1, 1, 1, 2, 2, 1, 0, 0, 0, 0, 0, 1, 2, 2, 1, 1, 1, 0 ] 
+Index = 0 
+Eigenvalues = [ 1, 1, 2, 4, 4, 10, 10, 10, 10 ] 
+Picard rank = 2 
+Trace = 2 
+7. 
+Subgroup order: 24. Measure^(-1): 48
+Orbits: 6^4 8^9 24^6 
+Intersection types between lines in orbit:
+  6^1 [ 2, 0, 3, 0, 2 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^2 [ 0, 0, 1, 0, 0 ] 
+  8^1 [ 0, 1, 2, 3, 2, 1, 0 ] 
+  8^1 [ 2, 1, 0, 3, 0, 1, 2 ] 
+  8^1 [ 1, 1, 1, 3, 1, 1, 1 ] 
+  8^2 [ 0, 0, 0, 1, 0, 0, 0 ] 
+  8^2 [ 2, 0, 1, 1, 1, 0, 2 ] 
+  8^2 [ 1, 0, 2, 1, 2, 0, 1 ] 
+  24^2 [ 1, 1, 1, 2, 0, 0, 1, 0, 2, 1, 0, 1, 0, 1, 2, 0, 1, 0, 0, 2, 1, 1, 1 ] 
+  24^2 [ 0, 1, 2, 2, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 2, 2, 1, 0 ] 
+  24^2 [ 1, 1, 2, 2, 1, 0, 1, 0, 2, 1, 1, 1, 1, 1, 2, 0, 1, 0, 1, 2, 2, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 1, 2, 6, 6, 8, 8, 8, 8 ] 
+Picard rank = 2 
+Trace = 2 
+8. 
+Subgroup order: 2. Measure^(-1): 696729600
+Orbits: 2^120 
+Intersection types between lines in orbit:
+  2^120 [ 3 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 2, 2, 2, 2, 2, 2 ] 
+Picard rank = 1 
+Trace = -7 
+9. 
+Subgroup order: 3. Measure^(-1): 155520
+Orbits: 3^80 
+Intersection types between lines in orbit:
+  3^80 [ 2, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 3, 3, 3, 3, 3, 3, 3, 3 ] 
+Picard rank = 1 
+Trace = -3 
+10. 
+Subgroup order: 4. Measure^(-1): 18432
+Orbits: 2^12 4^54 
+Intersection types between lines in orbit:
+  2^12 [ 3 ] 
+  4^6 [ 1, 3, 1 ] 
+  4^48 [ 2, 1, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 2, 2, 4, 4, 4, 4 ] 
+Picard rank = 1 
+Trace = -3 
+11. 
+Subgroup order: 5. Measure^(-1): 600
+Orbits: 5^48 
+Intersection types between lines in orbit:
+  5^24 [ 1, 2, 2, 1 ] 
+  5^24 [ 2, 1, 1, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 5, 5, 5, 5, 5, 5, 5, 5 ] 
+Picard rank = 1 
+Trace = -1 
+12. 
+Subgroup order: 6. Measure^(-1): 864
+Orbits: 2^3 3^8 6^35 
+Intersection types between lines in orbit:
+  2^3 [ 3 ] 
+  3^8 [ 2, 2 ] 
+  6^3 [ 1, 1, 3, 1, 1 ] 
+  6^8 [ 1, 2, 1, 2, 1 ] 
+  6^24 [ 2, 1, 1, 1, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 3, 3, 3, 3, 6, 6 ] 
+Picard rank = 1 
+Trace = -2 
+13. 
+Subgroup order: 8. Measure^(-1): 128
+Orbits: 2^2 4^5 8^27 
+Intersection types between lines in orbit:
+  2^2 [ 3 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^4 [ 2, 1, 2 ] 
+  8^1 [ 0, 1, 2, 3, 2, 1, 0 ] 
+  8^1 [ 2, 1, 0, 3, 0, 1, 2 ] 
+  8^1 [ 1, 1, 1, 3, 1, 1, 1 ] 
+  8^4 [ 2, 0, 2, 1, 2, 0, 2 ] 
+  8^4 [ 1, 2, 1, 1, 1, 2, 1 ] 
+  8^8 [ 2, 1, 1, 1, 1, 1, 2 ] 
+  8^8 [ 1, 1, 2, 1, 2, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 4, 4, 8, 8, 8, 8 ] 
+Picard rank = 1 
+Trace = -1 
+14. 
+Subgroup order: 9. Measure^(-1): 54
+Orbits: 3^2 9^26 
+Intersection types between lines in orbit:
+  3^2 [ 2, 2 ] 
+  9^2 [ 1, 2, 2, 0, 0, 2, 2, 1 ] 
+  9^2 [ 0, 1, 2, 2, 2, 2, 1, 0 ] 
+  9^2 [ 2, 0, 2, 1, 1, 2, 0, 2 ] 
+  9^2 [ 1, 1, 2, 1, 1, 2, 1, 1 ] 
+  9^6 [ 2, 1, 1, 1, 1, 1, 1, 2 ] 
+  9^6 [ 1, 2, 1, 1, 1, 1, 2, 1 ] 
+  9^6 [ 1, 1, 1, 2, 2, 1, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 3, 3, 9, 9, 9, 9, 9, 9 ] 
+Picard rank = 1 
+Trace = 0 
+15. 
+Subgroup order: 6. Measure^(-1): 311040
+Orbits: 2^36 6^28 
+Intersection types between lines in orbit:
+  2^36 [ 3 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^27 [ 2, 0, 3, 0, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 2, 2, 2, 2, 6, 6 ] 
+Picard rank = 1 
+Trace = -4 
+16. 
+Subgroup order: 6. Measure^(-1): 2592
+Orbits: 2^6 6^38 
+Intersection types between lines in orbit:
+  2^6 [ 3 ] 
+  6^2 [ 0, 2, 3, 2, 0 ] 
+  6^18 [ 2, 0, 3, 0, 2 ] 
+  6^18 [ 1, 1, 3, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 2, 2, 6, 6, 6, 6 ] 
+Picard rank = 1 
+Trace = -1 
+17. 
+Subgroup order: 4. Measure^(-1): 46080
+Orbits: 4^60 
+Intersection types between lines in orbit:
+  4^60 [ 1, 3, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 4, 4, 4, 4, 4, 4, 4, 4 ] 
+Picard rank = 1 
+Trace = 1 
+18. 
+Subgroup order: 12. Measure^(-1): 576
+Orbits: 4^18 6^4 12^12 
+Intersection types between lines in orbit:
+  4^6 [ 1, 3, 1 ] 
+  4^12 [ 2, 1, 2 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^3 [ 2, 0, 3, 0, 2 ] 
+  12^12 [ 1, 2, 2, 0, 1, 1, 1, 0, 2, 2, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 4, 4, 4, 4, 6, 6 ] 
+Picard rank = 1 
+Trace = 0 
+19. 
+Subgroup order: 10. Measure^(-1): 1200
+Orbits: 2^10 10^22 
+Intersection types between lines in orbit:
+  2^10 [ 3 ] 
+  10^1 [ 1, 2, 0, 1, 3, 1, 0, 2, 1 ] 
+  10^1 [ 0, 1, 1, 2, 3, 2, 1, 1, 0 ] 
+  10^5 [ 1, 0, 2, 1, 3, 1, 2, 0, 1 ] 
+  10^5 [ 2, 1, 1, 0, 3, 0, 1, 1, 2 ] 
+  10^10 [ 2, 0, 2, 0, 3, 0, 2, 0, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 2, 2, 10, 10, 10, 10 ] 
+Picard rank = 1 
+Trace = -2 
+20. 
+Subgroup order: 14. Measure^(-1): 28
+Orbits: 2^1 14^17 
+Intersection types between lines in orbit:
+  2^1 [ 3 ] 
+  14^1 [ 0, 0, 1, 1, 2, 2, 3, 2, 2, 1, 1, 0, 0 ] 
+  14^1 [ 1, 1, 0, 2, 1, 1, 3, 1, 1, 2, 0, 1, 1 ] 
+  14^1 [ 1, 2, 2, 0, 0, 1, 3, 1, 0, 0, 2, 2, 1 ] 
+  14^1 [ 0, 1, 1, 1, 1, 2, 3, 2, 1, 1, 1, 1, 0 ] 
+  14^1 [ 1, 2, 1, 1, 0, 1, 3, 1, 0, 1, 1, 2, 1 ] 
+  14^1 [ 2, 1, 0, 2, 1, 0, 3, 0, 1, 2, 0, 1, 2 ] 
+  14^2 [ 1, 0, 1, 1, 2, 1, 3, 1, 2, 1, 1, 0, 1 ] 
+  14^2 [ 2, 1, 1, 1, 1, 0, 3, 0, 1, 1, 1, 1, 2 ] 
+  14^2 [ 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1 ] 
+  14^2 [ 1, 1, 2, 0, 1, 1, 3, 1, 1, 0, 2, 1, 1 ] 
+  14^3 [ 2, 0, 2, 0, 2, 0, 3, 0, 2, 0, 2, 0, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 14, 14, 14, 14, 14, 14 ] 
+Picard rank = 1 
+Trace = 0 
+21. 
+Subgroup order: 12. Measure^(-1): 72
+Orbits: 4^3 12^19 
+Intersection types between lines in orbit:
+  4^3 [ 1, 3, 1 ] 
+  12^1 [ 1, 0, 1, 2, 1, 3, 1, 2, 1, 0, 1 ] 
+  12^3 [ 0, 1, 1, 1, 2, 3, 2, 1, 1, 1, 0 ] 
+  12^3 [ 2, 1, 1, 1, 0, 3, 0, 1, 1, 1, 2 ] 
+  12^3 [ 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1 ] 
+  12^9 [ 1, 2, 1, 0, 1, 3, 1, 0, 1, 2, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 4, 4, 4, 4, 12, 12, 12, 12 ] 
+Picard rank = 1 
+Trace = 1 
+22. 
+Subgroup order: 30. Measure^(-1): 60
+Orbits: 2^1 6^3 10^7 30^5 
+Intersection types between lines in orbit:
+  2^1 [ 3 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^2 [ 2, 0, 3, 0, 2 ] 
+  10^1 [ 1, 2, 0, 1, 3, 1, 0, 2, 1 ] 
+  10^1 [ 2, 0, 2, 0, 3, 0, 2, 0, 2 ] 
+  10^1 [ 0, 1, 1, 2, 3, 2, 1, 1, 0 ] 
+  10^2 [ 2, 1, 1, 0, 3, 0, 1, 1, 2 ] 
+  10^2 [ 1, 0, 2, 1, 3, 1, 2, 0, 1 ] 
+  30^1 [ 0, 1, 2, 2, 2, 1, 1, 1, 1, 0, 0, 0, 1, 2, 3, 2, 1, 0, 0, 0, 1, 1, 1, 1,
+2, 2, 2, 1, 0 ] 
+  30^1 [ 1, 2, 1, 1, 2, 0, 0, 2, 2, 0, 1, 1, 0, 1, 3, 1, 0, 1, 1, 0, 2, 2, 0, 0,
+2, 1, 1, 2, 1 ] 
+  30^3 [ 1, 1, 2, 1, 2, 0, 1, 1, 2, 0, 1, 0, 1, 1, 3, 1, 1, 0, 1, 0, 2, 1, 1, 0,
+2, 1, 2, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 6, 6, 10, 10, 10, 10 ] 
+Picard rank = 1 
+Trace = 1 
+23. 
+Subgroup order: 8. Measure^(-1): 192
+Orbits: 8^30 
+Intersection types between lines in orbit:
+  8^6 [ 2, 1, 0, 3, 0, 1, 2 ] 
+  8^6 [ 0, 1, 2, 3, 2, 1, 0 ] 
+  8^18 [ 1, 1, 1, 3, 1, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 8, 8, 8, 8, 8, 8, 8, 8 ] 
+Picard rank = 1 
+Trace = 1 
+24. 
+Subgroup order: 12. Measure^(-1): 288
+Orbits: 3^8 12^18 
+Intersection types between lines in orbit:
+  3^8 [ 2, 2 ] 
+  12^1 [ 0, 0, 1, 2, 2, 3, 2, 2, 1, 0, 0 ] 
+  12^1 [ 2, 0, 1, 2, 0, 3, 0, 2, 1, 0, 2 ] 
+  12^8 [ 2, 1, 0, 2, 1, 1, 1, 2, 0, 1, 2 ] 
+  12^8 [ 1, 1, 0, 2, 2, 1, 2, 2, 0, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 3, 3, 3, 3, 12, 12, 12, 12 ] 
+Picard rank = 1 
+Trace = -1 
+25. 
+Subgroup order: 6. Measure^(-1): 1728
+Orbits: 3^8 6^36 
+Intersection types between lines in orbit:
+  3^8 [ 2, 2 ] 
+  6^4 [ 0, 2, 3, 2, 0 ] 
+  6^32 [ 1, 2, 1, 2, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 3, 3, 3, 3, 6, 6, 6, 6 ] 
+Picard rank = 1 
+Trace = 1 
+26. 
+Subgroup order: 18. Measure^(-1): 108
+Orbits: 2^3 18^13 
+Intersection types between lines in orbit:
+  2^3 [ 3 ] 
+  18^1 [ 0, 0, 0, 1, 1, 2, 2, 2, 3, 2, 2, 2, 1, 1, 0, 0, 0 ] 
+  18^1 [ 1, 2, 0, 0, 2, 2, 0, 1, 3, 1, 0, 2, 2, 0, 0, 2, 1 ] 
+  18^1 [ 2, 1, 0, 2, 0, 2, 1, 0, 3, 0, 1, 2, 0, 2, 0, 1, 2 ] 
+  18^1 [ 1, 1, 0, 1, 1, 2, 1, 1, 3, 1, 1, 2, 1, 1, 0, 1, 1 ] 
+  18^3 [ 2, 0, 1, 1, 1, 1, 2, 0, 3, 0, 2, 1, 1, 1, 1, 0, 2 ] 
+  18^3 [ 2, 1, 1, 0, 2, 1, 1, 0, 3, 0, 1, 1, 2, 0, 1, 1, 2 ] 
+  18^3 [ 1, 0, 1, 0, 2, 1, 2, 1, 3, 1, 2, 1, 2, 0, 1, 0, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 18, 18, 18, 18, 18, 18 ] 
+Picard rank = 1 
+Trace = -1 
+27. 
+Subgroup order: 12. Measure^(-1): 144
+Orbits: 2^3 6^3 12^18 
+Intersection types between lines in orbit:
+  2^3 [ 3 ] 
+  6^3 [ 1, 1, 3, 1, 1 ] 
+  12^1 [ 2, 0, 1, 2, 0, 3, 0, 2, 1, 0, 2 ] 
+  12^1 [ 0, 0, 1, 2, 2, 3, 2, 2, 1, 0, 0 ] 
+  12^2 [ 0, 1, 2, 2, 1, 1, 1, 2, 2, 1, 0 ] 
+  12^2 [ 1, 1, 2, 2, 0, 1, 0, 2, 2, 1, 1 ] 
+  12^6 [ 1, 0, 2, 1, 2, 1, 2, 1, 2, 0, 1 ] 
+  12^6 [ 2, 0, 2, 1, 1, 1, 1, 1, 2, 0, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 6, 6, 12, 12, 12, 12 ] 
+Picard rank = 1 
+Trace = 0 
+28. 
+Subgroup order: 6. Measure^(-1): 7776
+Orbits: 2^3 6^39 
+Intersection types between lines in orbit:
+  2^3 [ 3 ] 
+  6^12 [ 0, 2, 3, 2, 0 ] 
+  6^27 [ 1, 1, 3, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 2, 2, 6, 6, 6, 6, 6, 6 ] 
+Picard rank = 1 
+Trace = 2 
+29. 
+Subgroup order: 30. Measure^(-1): 30
+Orbits: 30^8 
+Intersection types between lines in orbit:
+  30^1 [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 1, 1, 1, 1,
+0, 0, 0, 0, 0 ] 
+  30^1 [ 1, 0, 0, 1, 0, 1, 1, 1, 1, 2, 1, 2, 2, 1, 3, 1, 2, 2, 1, 2, 1, 1, 1, 1,
+0, 1, 0, 0, 1 ] 
+  30^1 [ 2, 1, 0, 2, 0, 1, 2, 0, 1, 2, 0, 2, 1, 0, 3, 0, 1, 2, 0, 2, 1, 0, 2, 1,
+0, 2, 0, 1, 2 ] 
+  30^1 [ 2, 0, 1, 1, 0, 2, 0, 2, 0, 2, 1, 1, 2, 0, 3, 0, 2, 1, 1, 2, 0, 2, 0, 2,
+0, 1, 1, 0, 2 ] 
+  30^1 [ 1, 1, 0, 1, 0, 1, 2, 0, 1, 2, 1, 2, 1, 1, 3, 1, 1, 2, 1, 2, 1, 0, 2, 1,
+0, 1, 0, 1, 1 ] 
+  30^1 [ 1, 2, 1, 0, 0, 2, 2, 0, 0, 2, 2, 1, 0, 1, 3, 1, 0, 1, 2, 2, 0, 0, 2, 2,
+0, 0, 1, 2, 1 ] 
+  30^1 [ 1, 1, 1, 0, 0, 2, 1, 1, 0, 2, 2, 1, 1, 1, 3, 1, 1, 1, 2, 2, 0, 1, 1, 2,
+0, 0, 1, 1, 1 ] 
+  30^1 [ 2, 1, 1, 1, 0, 2, 1, 1, 0, 2, 1, 1, 1, 0, 3, 0, 1, 1, 1, 2, 0, 1, 1, 2,
+0, 1, 1, 1, 2 ] 
+Index = 0 
+Eigenvalues = [ 1, 30, 30, 30, 30, 30, 30, 30, 30 ] 
+Picard rank = 1 
+Trace = 0 
+30. 
+Subgroup order: 24. Measure^(-1): 24
+Orbits: 24^10 
+Intersection types between lines in orbit:
+  24^1 [ 1, 0, 1, 0, 1, 1, 1, 2, 1, 2, 1, 3, 1, 2, 1, 2, 1, 1, 1, 0, 1, 0, 1 ] 
+  24^1 [ 2, 1, 1, 0, 2, 1, 0, 2, 1, 1, 0, 3, 0, 1, 1, 2, 0, 1, 2, 0, 1, 1, 2 ] 
+  24^1 [ 1, 2, 1, 0, 1, 1, 1, 2, 1, 0, 1, 3, 1, 0, 1, 2, 1, 1, 1, 0, 1, 2, 1 ] 
+  24^1 [ 2, 0, 2, 0, 1, 1, 1, 2, 0, 2, 0, 3, 0, 2, 0, 2, 1, 1, 1, 0, 2, 0, 2 ] 
+  24^1 [ 1, 2, 0, 0, 2, 1, 0, 2, 2, 0, 1, 3, 1, 0, 2, 2, 0, 1, 2, 0, 0, 2, 1 ] 
+  24^1 [ 1, 2, 2, 0, 0, 1, 2, 2, 0, 0, 1, 3, 1, 0, 0, 2, 2, 1, 0, 0, 2, 2, 1 ] 
+  24^1 [ 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 3, 2, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0 ] 
+  24^1 [ 0, 1, 1, 0, 0, 1, 2, 2, 1, 1, 2, 3, 2, 1, 1, 2, 2, 1, 0, 0, 1, 1, 0 ] 
+  24^2 [ 1, 1, 1, 0, 1, 1, 1, 2, 1, 1, 1, 3, 1, 1, 1, 2, 1, 1, 1, 0, 1, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 24, 24, 24, 24, 24, 24, 24, 24 ] 
+Picard rank = 1 
+Trace = 1 
+31. 
+Subgroup order: 20. Measure^(-1): 20
+Orbits: 20^12 
+Intersection types between lines in orbit:
+  20^1 [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 2, 2, 2, 1, 1, 1, 0, 0, 0 ] 
+  20^1 [ 0, 0, 1, 1, 1, 1, 1, 2, 2, 3, 2, 2, 1, 1, 1, 1, 1, 0, 0 ] 
+  20^1 [ 2, 0, 2, 1, 1, 1, 0, 2, 0, 3, 0, 2, 0, 1, 1, 1, 2, 0, 2 ] 
+  20^1 [ 1, 1, 0, 2, 1, 0, 2, 1, 1, 3, 1, 1, 2, 0, 1, 2, 0, 1, 1 ] 
+  20^1 [ 2, 1, 0, 2, 1, 0, 2, 1, 0, 3, 0, 1, 2, 0, 1, 2, 0, 1, 2 ] 
+  20^1 [ 1, 1, 2, 2, 1, 0, 0, 1, 1, 3, 1, 1, 0, 0, 1, 2, 2, 1, 1 ] 
+  20^1 [ 2, 0, 1, 1, 1, 1, 1, 2, 0, 3, 0, 2, 1, 1, 1, 1, 1, 0, 2 ] 
+  20^1 [ 0, 1, 2, 2, 1, 0, 0, 1, 2, 3, 2, 1, 0, 0, 1, 2, 2, 1, 0 ] 
+  20^2 [ 1, 1, 1, 2, 1, 0, 1, 1, 1, 3, 1, 1, 1, 0, 1, 2, 1, 1, 1 ] 
+  20^2 [ 1, 0, 1, 1, 1, 1, 1, 2, 1, 3, 1, 2, 1, 1, 1, 1, 1, 0, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 20, 20, 20, 20, 20, 20, 20, 20 ] 
+Picard rank = 1 
+Trace = 1 
+32. 
+Subgroup order: 12. Measure^(-1): 288
+Orbits: 12^20 
+Intersection types between lines in orbit:
+  12^6 [ 0, 0, 1, 2, 2, 3, 2, 2, 1, 0, 0 ] 
+  12^6 [ 2, 0, 1, 2, 0, 3, 0, 2, 1, 0, 2 ] 
+  12^8 [ 1, 0, 1, 2, 1, 3, 1, 2, 1, 0, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 12, 12, 12, 12, 12, 12, 12, 12 ] 
+Picard rank = 1 
+Trace = 1 
+33. 
+Subgroup order: 18. Measure^(-1): 54
+Orbits: 6^1 18^13 
+Intersection types between lines in orbit:
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  18^1 [ 0, 0, 0, 1, 1, 2, 2, 2, 3, 2, 2, 2, 1, 1, 0, 0, 0 ] 
+  18^1 [ 1, 2, 0, 0, 2, 2, 0, 1, 3, 1, 0, 2, 2, 0, 0, 2, 1 ] 
+  18^1 [ 2, 1, 0, 2, 0, 2, 1, 0, 3, 0, 1, 2, 0, 2, 0, 1, 2 ] 
+  18^1 [ 1, 1, 0, 1, 1, 2, 1, 1, 3, 1, 1, 2, 1, 1, 0, 1, 1 ] 
+  18^3 [ 0, 1, 1, 1, 1, 1, 1, 2, 3, 2, 1, 1, 1, 1, 1, 1, 0 ] 
+  18^3 [ 1, 2, 1, 1, 1, 1, 0, 1, 3, 1, 0, 1, 1, 1, 1, 2, 1 ] 
+  18^3 [ 1, 1, 1, 2, 0, 1, 1, 1, 3, 1, 1, 1, 0, 2, 1, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 6, 6, 18, 18, 18, 18, 18, 18 ] 
+Picard rank = 1 
+Trace = 2 
+34. 
+Subgroup order: 15. Measure^(-1): 30
+Orbits: 15^16 
+Intersection types between lines in orbit:
+  15^2 [ 0, 1, 2, 2, 2, 1, 0, 0, 1, 2, 2, 2, 1, 0 ] 
+  15^2 [ 1, 1, 1, 0, 2, 2, 1, 1, 2, 2, 0, 1, 1, 1 ] 
+  15^2 [ 2, 0, 2, 0, 2, 1, 1, 1, 1, 2, 0, 2, 0, 2 ] 
+  15^2 [ 0, 1, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 0 ] 
+  15^2 [ 1, 2, 1, 0, 2, 2, 0, 0, 2, 2, 0, 1, 2, 1 ] 
+  15^2 [ 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 0, 0 ] 
+  15^2 [ 1, 1, 2, 1, 2, 1, 0, 0, 1, 2, 1, 2, 1, 1 ] 
+  15^2 [ 1, 0, 2, 1, 2, 1, 1, 1, 1, 2, 1, 2, 0, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 15, 15, 15, 15, 15, 15, 15, 15 ] 
+Picard rank = 1 
+Trace = 2 
+35. 
+Subgroup order: 10. Measure^(-1): 600
+Orbits: 10^24 
+Intersection types between lines in orbit:
+  10^12 [ 1, 2, 0, 1, 3, 1, 0, 2, 1 ] 
+  10^12 [ 0, 1, 1, 2, 3, 2, 1, 1, 0 ] 
+Index = 0 
+Eigenvalues = [ 1, 10, 10, 10, 10, 10, 10, 10, 10 ] 
+Picard rank = 1 
+Trace = 3 
+36. 
+Subgroup order: 12. Measure^(-1): 288
+Orbits: 6^4 12^18 
+Intersection types between lines in orbit:
+  6^4 [ 0, 2, 3, 2, 0 ] 
+  12^1 [ 0, 0, 1, 2, 2, 3, 2, 2, 1, 0, 0 ] 
+  12^1 [ 2, 0, 1, 2, 0, 3, 0, 2, 1, 0, 2 ] 
+  12^8 [ 0, 1, 2, 2, 1, 1, 1, 2, 2, 1, 0 ] 
+  12^8 [ 1, 1, 2, 2, 0, 1, 0, 2, 2, 1, 1 ] 
+Index = 0 
+Eigenvalues = [ 1, 6, 6, 6, 6, 12, 12, 12, 12 ] 
+Picard rank = 1 
+Trace = 3 
+37. 
+Subgroup order: 6. Measure^(-1): 155520
+Orbits: 6^40 
+Intersection types between lines in orbit:
+  6^40 [ 0, 2, 3, 2, 0 ] 
+Index = 0 
+Eigenvalues = [ 1, 6, 6, 6, 6, 6, 6, 6, 6 ] 
+Picard rank = 1 
+Trace = 5 
+38. 
+Subgroup order: 2. Measure^(-1): 184320
+Orbits: 1^4 2^118 
+Intersection types between lines in orbit:
+  1^4 [] 
+  2^24 [ 1 ] 
+  2^30 [ 3 ] 
+  2^64 [ 2 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 1, 2, 2, 2, 2, 2, 2 ] 
+Picard rank = 3 
+Trace = -3 
+39. 
+Subgroup order: 4. Measure^(-1): 1024
+Orbits: 1^4 2^10 4^54 
+Intersection types between lines in orbit:
+  1^4 [] 
+  2^2 [ 3 ] 
+  2^8 [ 1 ] 
+  4^6 [ 1, 3, 1 ] 
+  4^8 [ 2, 1, 2 ] 
+  4^8 [ 0, 1, 0 ] 
+  4^32 [ 1, 1, 1 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 1, 2, 2, 4, 4, 4, 4 ] 
+Picard rank = 3 
+Trace = 1 
+40. 
+Subgroup order: 6. Measure^(-1): 1152
+Orbits: 1^4 2^34 6^28 
+Intersection types between lines in orbit:
+  1^4 [] 
+  2^6 [ 3 ] 
+  2^12 [ 1 ] 
+  2^16 [ 2 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^4 [ 0, 0, 1, 0, 0 ] 
+  6^7 [ 2, 0, 3, 0, 2 ] 
+  6^16 [ 1, 0, 2, 0, 1 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 1, 2, 2, 2, 2, 6, 6 ] 
+Picard rank = 3 
+Trace = 0 
+41. 
+Subgroup order: 10. Measure^(-1): 80
+Orbits: 1^4 2^8 10^22 
+Intersection types between lines in orbit:
+  1^4 [] 
+  2^4 [ 2 ] 
+  2^4 [ 1 ] 
+  10^1 [ 2, 1, 1, 0, 3, 0, 1, 1, 2 ] 
+  10^1 [ 0, 1, 1, 2, 3, 2, 1, 1, 0 ] 
+  10^1 [ 1, 2, 0, 1, 3, 1, 0, 2, 1 ] 
+  10^1 [ 1, 0, 2, 1, 3, 1, 2, 0, 1 ] 
+  10^2 [ 2, 0, 2, 0, 3, 0, 2, 0, 2 ] 
+  10^4 [ 0, 0, 1, 1, 2, 1, 1, 0, 0 ] 
+  10^4 [ 1, 1, 0, 0, 2, 0, 0, 1, 1 ] 
+  10^4 [ 0, 0, 0, 0, 1, 0, 0, 0, 0 ] 
+  10^4 [ 1, 0, 1, 0, 2, 0, 1, 0, 1 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 1, 2, 2, 10, 10, 10, 10 ] 
+Picard rank = 3 
+Trace = 2 
+42. 
+Subgroup order: 8. Measure^(-1): 128
+Orbits: 1^4 4^5 8^27 
+Intersection types between lines in orbit:
+  1^4 [] 
+  4^1 [ 1, 3, 1 ] 
+  4^4 [ 0, 1, 0 ] 
+  8^1 [ 0, 1, 2, 3, 2, 1, 0 ] 
+  8^1 [ 2, 1, 0, 3, 0, 1, 2 ] 
+  8^1 [ 1, 1, 1, 3, 1, 1, 1 ] 
+  8^4 [ 0, 0, 0, 1, 0, 0, 0 ] 
+  8^4 [ 1, 2, 1, 1, 1, 2, 1 ] 
+  8^8 [ 1, 1, 0, 1, 0, 1, 1 ] 
+  8^8 [ 0, 1, 1, 1, 1, 1, 0 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 1, 4, 4, 8, 8, 8, 8 ] 
+Picard rank = 3 
+Trace = 3 
+43. 
+Subgroup order: 6. Measure^(-1): 288
+Orbits: 1^4 2^4 6^38 
+Intersection types between lines in orbit:
+  1^4 [] 
+  2^4 [ 2 ] 
+  6^2 [ 2, 0, 3, 0, 2 ] 
+  6^2 [ 0, 2, 3, 2, 0 ] 
+  6^6 [ 1, 1, 3, 1, 1 ] 
+  6^8 [ 1, 0, 2, 0, 1 ] 
+  6^8 [ 0, 0, 1, 0, 0 ] 
+  6^12 [ 0, 1, 2, 1, 0 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 1, 2, 2, 6, 6, 6, 6 ] 
+Picard rank = 3 
+Trace = 3 
+44. 
+Subgroup order: 2. Measure^(-1): 5806080
+Orbits: 1^2 2^119 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^56 [ 2 ] 
+  2^63 [ 3 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 2, 2, 2, 2, 2, 2 ] 
+Picard rank = 2 
+Trace = -5 
+45. 
+Subgroup order: 4. Measure^(-1): 1536
+Orbits: 1^2 2^11 4^54 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^3 [ 3 ] 
+  2^8 [ 2 ] 
+  4^6 [ 1, 3, 1 ] 
+  4^24 [ 1, 1, 1 ] 
+  4^24 [ 2, 1, 2 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 2, 2, 4, 4, 4, 4 ] 
+Picard rank = 2 
+Trace = -1 
+46. 
+Subgroup order: 6. Measure^(-1): 288
+Orbits: 1^2 2^2 3^8 6^35 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^2 [ 2 ] 
+  3^8 [ 2, 2 ] 
+  6^1 [ 1, 1, 3, 1, 1 ] 
+  6^2 [ 0, 1, 2, 1, 0 ] 
+  6^8 [ 1, 2, 1, 2, 1 ] 
+  6^8 [ 2, 1, 1, 1, 2 ] 
+  6^16 [ 1, 1, 0, 1, 1 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 3, 3, 3, 3, 6, 6 ] 
+Picard rank = 2 
+Trace = 0 
+47. 
+Subgroup order: 8. Measure^(-1): 64
+Orbits: 1^2 2^1 4^5 8^27 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^1 [ 3 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^4 [ 1, 1, 1 ] 
+  8^1 [ 2, 1, 0, 3, 0, 1, 2 ] 
+  8^1 [ 1, 1, 1, 3, 1, 1, 1 ] 
+  8^1 [ 0, 1, 2, 3, 2, 1, 0 ] 
+  8^4 [ 0, 1, 1, 1, 1, 1, 0 ] 
+  8^4 [ 1, 2, 1, 1, 1, 2, 1 ] 
+  8^4 [ 1, 1, 2, 1, 2, 1, 1 ] 
+  8^4 [ 2, 1, 1, 1, 1, 1, 2 ] 
+  8^4 [ 1, 0, 1, 1, 1, 0, 1 ] 
+  8^4 [ 1, 1, 0, 1, 0, 1, 1 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 4, 4, 8, 8, 8, 8 ] 
+Picard rank = 2 
+Trace = 1 
+48. 
+Subgroup order: 6. Measure^(-1): 8640
+Orbits: 1^2 2^35 6^28 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^15 [ 3 ] 
+  2^20 [ 2 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^12 [ 1, 0, 2, 0, 1 ] 
+  6^15 [ 2, 0, 3, 0, 2 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 2, 2, 2, 2, 6, 6 ] 
+Picard rank = 2 
+Trace = -2 
+49. 
+Subgroup order: 10. Measure^(-1): 120
+Orbits: 1^2 2^9 10^22 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^3 [ 3 ] 
+  2^6 [ 2 ] 
+  10^1 [ 1, 2, 0, 1, 3, 1, 0, 2, 1 ] 
+  10^1 [ 0, 1, 1, 2, 3, 2, 1, 1, 0 ] 
+  10^2 [ 0, 0, 1, 1, 2, 1, 1, 0, 0 ] 
+  10^2 [ 1, 1, 0, 0, 2, 0, 0, 1, 1 ] 
+  10^3 [ 2, 1, 1, 0, 3, 0, 1, 1, 2 ] 
+  10^3 [ 1, 0, 2, 1, 3, 1, 2, 0, 1 ] 
+  10^4 [ 2, 0, 2, 0, 3, 0, 2, 0, 2 ] 
+  10^6 [ 1, 0, 1, 0, 2, 0, 1, 0, 1 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 2, 2, 10, 10, 10, 10 ] 
+Picard rank = 2 
+Trace = 0 
+50. 
+Subgroup order: 6. Measure^(-1): 432
+Orbits: 1^2 2^5 6^38 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^2 [ 2 ] 
+  2^3 [ 3 ] 
+  6^2 [ 0, 2, 3, 2, 0 ] 
+  6^6 [ 2, 0, 3, 0, 2 ] 
+  6^6 [ 0, 1, 2, 1, 0 ] 
+  6^12 [ 1, 0, 2, 0, 1 ] 
+  6^12 [ 1, 1, 3, 1, 1 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 2, 2, 6, 6, 6, 6 ] 
+Picard rank = 2 
+Trace = 1 
+51. 
+Subgroup order: 18. Measure^(-1): 36
+Orbits: 1^2 2^2 18^13 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^2 [ 2 ] 
+  18^1 [ 2, 1, 1, 0, 2, 1, 1, 0, 3, 0, 1, 1, 2, 0, 1, 1, 2 ] 
+  18^1 [ 2, 0, 1, 1, 1, 1, 2, 0, 3, 0, 2, 1, 1, 1, 1, 0, 2 ] 
+  18^1 [ 2, 1, 0, 2, 0, 2, 1, 0, 3, 0, 1, 2, 0, 2, 0, 1, 2 ] 
+  18^1 [ 1, 2, 0, 0, 2, 2, 0, 1, 3, 1, 0, 2, 2, 0, 0, 2, 1 ] 
+  18^1 [ 0, 0, 0, 1, 1, 2, 2, 2, 3, 2, 2, 2, 1, 1, 0, 0, 0 ] 
+  18^1 [ 1, 1, 0, 1, 1, 2, 1, 1, 3, 1, 1, 2, 1, 1, 0, 1, 1 ] 
+  18^1 [ 1, 0, 1, 0, 2, 1, 2, 1, 3, 1, 2, 1, 2, 0, 1, 0, 1 ] 
+  18^2 [ 1, 1, 0, 0, 1, 1, 0, 0, 2, 0, 0, 1, 1, 0, 0, 1, 1 ] 
+  18^2 [ 0, 0, 0, 0, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 0, 0, 0 ] 
+  18^2 [ 1, 0, 0, 1, 0, 1, 1, 0, 2, 0, 1, 1, 0, 1, 0, 0, 1 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 18, 18, 18, 18, 18, 18 ] 
+Picard rank = 2 
+Trace = 1 
+52. 
+Subgroup order: 14. Measure^(-1): 28
+Orbits: 1^2 14^17 
+Intersection types between lines in orbit:
+  1^2 [] 
+  14^1 [ 2, 0, 2, 0, 2, 0, 3, 0, 2, 0, 2, 0, 2 ] 
+  14^1 [ 0, 0, 1, 1, 2, 2, 3, 2, 2, 1, 1, 0, 0 ] 
+  14^1 [ 1, 1, 0, 2, 1, 1, 3, 1, 1, 2, 0, 1, 1 ] 
+  14^1 [ 1, 2, 2, 0, 0, 1, 3, 1, 0, 0, 2, 2, 1 ] 
+  14^1 [ 0, 1, 1, 1, 1, 2, 3, 2, 1, 1, 1, 1, 0 ] 
+  14^1 [ 1, 2, 1, 1, 0, 1, 3, 1, 0, 1, 1, 2, 1 ] 
+  14^1 [ 2, 1, 0, 2, 1, 0, 3, 0, 1, 2, 0, 1, 2 ] 
+  14^2 [ 1, 0, 1, 0, 1, 0, 2, 0, 1, 0, 1, 0, 1 ] 
+  14^2 [ 1, 1, 0, 1, 0, 0, 2, 0, 0, 1, 0, 1, 1 ] 
+  14^2 [ 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1 ] 
+  14^2 [ 0, 1, 1, 0, 0, 1, 2, 1, 0, 0, 1, 1, 0 ] 
+  14^2 [ 0, 0, 0, 1, 1, 1, 2, 1, 1, 1, 0, 0, 0 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 14, 14, 14, 14, 14, 14 ] 
+Picard rank = 2 
+Trace = 2 
+53. 
+Subgroup order: 12. Measure^(-1): 48
+Orbits: 1^2 2^2 6^3 12^18 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^2 [ 2 ] 
+  6^1 [ 1, 1, 3, 1, 1 ] 
+  6^2 [ 0, 1, 2, 1, 0 ] 
+  12^1 [ 2, 0, 1, 2, 0, 3, 0, 2, 1, 0, 2 ] 
+  12^1 [ 0, 0, 1, 2, 2, 3, 2, 2, 1, 0, 0 ] 
+  12^2 [ 2, 0, 2, 1, 1, 1, 1, 1, 2, 0, 2 ] 
+  12^2 [ 1, 0, 2, 1, 2, 1, 2, 1, 2, 0, 1 ] 
+  12^2 [ 0, 1, 2, 2, 1, 1, 1, 2, 2, 1, 0 ] 
+  12^2 [ 1, 1, 2, 2, 0, 1, 0, 2, 2, 1, 1 ] 
+  12^4 [ 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1 ] 
+  12^4 [ 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 6, 6, 12, 12, 12, 12 ] 
+Picard rank = 2 
+Trace = 2 
+54. 
+Subgroup order: 30. Measure^(-1): 60
+Orbits: 1^2 6^3 10^7 30^5 
+Intersection types between lines in orbit:
+  1^2 [] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^2 [ 1, 0, 2, 0, 1 ] 
+  10^1 [ 1, 2, 0, 1, 3, 1, 0, 2, 1 ] 
+  10^1 [ 2, 0, 2, 0, 3, 0, 2, 0, 2 ] 
+  10^1 [ 0, 1, 1, 2, 3, 2, 1, 1, 0 ] 
+  10^2 [ 0, 0, 1, 1, 2, 1, 1, 0, 0 ] 
+  10^2 [ 1, 1, 0, 0, 2, 0, 0, 1, 1 ] 
+  30^1 [ 0, 1, 2, 2, 2, 1, 1, 1, 1, 0, 0, 0, 1, 2, 3, 2, 1, 0, 0, 0, 1, 1, 1, 1,
+2, 2, 2, 1, 0 ] 
+  30^1 [ 1, 1, 2, 1, 2, 0, 1, 1, 2, 0, 1, 0, 1, 1, 3, 1, 1, 0, 1, 0, 2, 1, 1, 0,
+2, 1, 2, 1, 1 ] 
+  30^1 [ 1, 2, 1, 1, 2, 0, 0, 2, 2, 0, 1, 1, 0, 1, 3, 1, 0, 1, 1, 0, 2, 2, 0, 0,
+2, 1, 1, 2, 1 ] 
+  30^2 [ 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 1, 1, 0, 0,
+1, 1, 1, 1, 0 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 6, 6, 10, 10, 10, 10 ] 
+Picard rank = 2 
+Trace = 3 
+55. 
+Subgroup order: 6. Measure^(-1): 2592
+Orbits: 1^2 2^2 6^39 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^2 [ 2 ] 
+  6^9 [ 1, 1, 3, 1, 1 ] 
+  6^12 [ 0, 2, 3, 2, 0 ] 
+  6^18 [ 0, 1, 2, 1, 0 ] 
+Index = 1 
+Eigenvalues = [ 1, 1, 2, 6, 6, 6, 6, 6, 6 ] 
+Picard rank = 2 
+Trace = 4 
+56. 
+Subgroup order: 3. Measure^(-1): 7776
+Orbits: 1^6 3^78 
+Intersection types between lines in orbit:
+  1^6 [] 
+  3^24 [ 2, 2 ] 
+  3^54 [ 1, 1 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 1, 3, 3, 3, 3, 3, 3 ] 
+Picard rank = 3 
+Trace = 0 
+57. 
+Subgroup order: 6. Measure^(-1): 432
+Orbits: 1^6 2^3 3^6 6^35 
+Intersection types between lines in orbit:
+  1^6 [] 
+  2^3 [ 3 ] 
+  3^6 [ 1, 1 ] 
+  6^2 [ 1, 2, 1, 2, 1 ] 
+  6^3 [ 1, 1, 3, 1, 1 ] 
+  6^6 [ 0, 1, 1, 1, 0 ] 
+  6^6 [ 2, 1, 1, 1, 2 ] 
+  6^18 [ 1, 0, 1, 0, 1 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 1, 2, 2, 3, 3, 6, 6 ] 
+Picard rank = 3 
+Trace = 1 
+58. 
+Subgroup order: 12. Measure^(-1): 144
+Orbits: 1^6 3^6 12^18 
+Intersection types between lines in orbit:
+  1^6 [] 
+  3^6 [ 1, 1 ] 
+  12^1 [ 2, 0, 1, 2, 0, 3, 0, 2, 1, 0, 2 ] 
+  12^1 [ 0, 0, 1, 2, 2, 3, 2, 2, 1, 0, 0 ] 
+  12^2 [ 2, 1, 0, 2, 1, 1, 1, 2, 0, 1, 2 ] 
+  12^2 [ 1, 1, 0, 2, 2, 1, 2, 2, 0, 1, 1 ] 
+  12^6 [ 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0 ] 
+  12^6 [ 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 1, 3, 3, 12, 12, 12, 12 ] 
+Picard rank = 3 
+Trace = 2 
+59. 
+Subgroup order: 9. Measure^(-1): 108
+Orbits: 1^6 9^26 
+Intersection types between lines in orbit:
+  1^6 [] 
+  9^2 [ 1, 2, 2, 0, 0, 2, 2, 1 ] 
+  9^2 [ 0, 1, 2, 2, 2, 2, 1, 0 ] 
+  9^2 [ 2, 0, 2, 1, 1, 2, 0, 2 ] 
+  9^2 [ 1, 1, 2, 1, 1, 2, 1, 1 ] 
+  9^6 [ 1, 0, 1, 0, 0, 1, 0, 1 ] 
+  9^6 [ 0, 1, 1, 0, 0, 1, 1, 0 ] 
+  9^6 [ 0, 0, 1, 1, 1, 1, 0, 0 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 1, 9, 9, 9, 9, 9, 9 ] 
+Picard rank = 3 
+Trace = 3 
+60. 
+Subgroup order: 6. Measure^(-1): 864
+Orbits: 1^6 3^6 6^36 
+Intersection types between lines in orbit:
+  1^6 [] 
+  3^6 [ 1, 1 ] 
+  6^4 [ 0, 2, 3, 2, 0 ] 
+  6^8 [ 1, 2, 1, 2, 1 ] 
+  6^24 [ 0, 1, 1, 1, 0 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 1, 3, 3, 6, 6, 6, 6 ] 
+Picard rank = 3 
+Trace = 4 
+61. 
+Subgroup order: 6. Measure^(-1): 2592
+Orbits: 2^3 3^42 6^18 
+Intersection types between lines in orbit:
+  2^1 [ 3 ] 
+  2^2 [ 0 ] 
+  3^18 [ 1, 1 ] 
+  3^24 [ 2, 2 ] 
+  6^18 [ 2, 1, 0, 1, 2 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 2, 3, 3, 3, 3, 3, 3 ] 
+Picard rank = 2 
+Trace = -2 
+62. 
+Subgroup order: 6. Measure^(-1): 144
+Orbits: 2^6 3^2 6^37 
+Intersection types between lines in orbit:
+  2^2 [ 0 ] 
+  2^4 [ 3 ] 
+  3^2 [ 1, 1 ] 
+  6^2 [ 1, 2, 1, 2, 1 ] 
+  6^2 [ 2, 1, 0, 1, 2 ] 
+  6^2 [ 0, 1, 1, 1, 0 ] 
+  6^3 [ 1, 1, 3, 1, 1 ] 
+  6^4 [ 1, 1, 2, 1, 1 ] 
+  6^6 [ 1, 0, 1, 0, 1 ] 
+  6^6 [ 2, 1, 1, 1, 2 ] 
+  6^12 [ 2, 0, 2, 0, 2 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 2, 2, 2, 3, 3, 6, 6 ] 
+Picard rank = 2 
+Trace = -1 
+63. 
+Subgroup order: 12. Measure^(-1): 48
+Orbits: 2^3 3^2 6^2 12^18 
+Intersection types between lines in orbit:
+  2^1 [ 3 ] 
+  2^2 [ 0 ] 
+  3^2 [ 1, 1 ] 
+  6^2 [ 2, 1, 0, 1, 2 ] 
+  12^1 [ 2, 0, 1, 2, 0, 3, 0, 2, 1, 0, 2 ] 
+  12^1 [ 0, 0, 1, 2, 2, 3, 2, 2, 1, 0, 0 ] 
+  12^2 [ 2, 1, 0, 2, 1, 1, 1, 2, 0, 1, 2 ] 
+  12^2 [ 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0 ] 
+  12^2 [ 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1 ] 
+  12^2 [ 1, 1, 0, 2, 2, 1, 2, 2, 0, 1, 1 ] 
+  12^4 [ 1, 0, 1, 1, 2, 1, 2, 1, 1, 0, 1 ] 
+  12^4 [ 2, 0, 1, 1, 1, 1, 1, 1, 1, 0, 2 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 2, 3, 3, 12, 12, 12, 12 ] 
+Picard rank = 2 
+Trace = 0 
+64. 
+Subgroup order: 18. Measure^(-1): 36
+Orbits: 2^3 9^14 18^6 
+Intersection types between lines in orbit:
+  2^1 [ 3 ] 
+  2^2 [ 0 ] 
+  9^2 [ 2, 0, 2, 1, 1, 2, 0, 2 ] 
+  9^2 [ 0, 0, 1, 1, 1, 1, 0, 0 ] 
+  9^2 [ 1, 2, 2, 0, 0, 2, 2, 1 ] 
+  9^2 [ 0, 1, 2, 2, 2, 2, 1, 0 ] 
+  9^2 [ 1, 0, 1, 0, 0, 1, 0, 1 ] 
+  9^2 [ 1, 1, 2, 1, 1, 2, 1, 1 ] 
+  9^2 [ 0, 1, 1, 0, 0, 1, 1, 0 ] 
+  18^2 [ 2, 0, 2, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 2, 0, 2 ] 
+  18^2 [ 1, 1, 2, 0, 1, 1, 2, 0, 0, 0, 2, 1, 1, 0, 2, 1, 1 ] 
+  18^2 [ 1, 0, 2, 1, 2, 1, 1, 0, 0, 0, 1, 1, 2, 1, 2, 0, 1 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 2, 9, 9, 9, 9, 9, 9 ] 
+Picard rank = 2 
+Trace = 1 
+65. 
+Subgroup order: 6. Measure^(-1): 288
+Orbits: 2^3 3^2 6^38 
+Intersection types between lines in orbit:
+  2^1 [ 3 ] 
+  2^2 [ 0 ] 
+  3^2 [ 1, 1 ] 
+  6^2 [ 2, 1, 0, 1, 2 ] 
+  6^4 [ 0, 2, 3, 2, 0 ] 
+  6^8 [ 1, 2, 1, 2, 1 ] 
+  6^8 [ 0, 1, 1, 1, 0 ] 
+  6^16 [ 1, 1, 2, 1, 1 ] 
+Index = 2 
+Eigenvalues = [ 1, 1, 2, 3, 3, 6, 6, 6, 6 ] 
+Picard rank = 2 
+Trace = 2 
+66. 
+Subgroup order: 2. Measure^(-1): 221184
+Orbits: 1^24 2^108 
+Intersection types between lines in orbit:
+  1^24 [] 
+  2^12 [ 3 ] 
+  2^96 [ 1 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 1, 1, 2, 2, 2, 2 ] 
+Picard rank = 5 
+Trace = 1 
+67. 
+Subgroup order: 6. Measure^(-1): 6912
+Orbits: 1^24 2^24 6^28 
+Intersection types between lines in orbit:
+  1^24 [] 
+  2^24 [ 1 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^3 [ 2, 0, 3, 0, 2 ] 
+  6^24 [ 0, 0, 1, 0, 0 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 1, 1, 2, 2, 6, 6 ] 
+Picard rank = 5 
+Trace = 4 
+68. 
+Subgroup order: 4. Measure^(-1): 18432
+Orbits: 1^24 4^54 
+Intersection types between lines in orbit:
+  1^24 [] 
+  4^6 [ 1, 3, 1 ] 
+  4^48 [ 0, 1, 0 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 1, 1, 4, 4, 4, 4 ] 
+Picard rank = 5 
+Trace = 5 
+69. 
+Subgroup order: 2. Measure^(-1): 18432
+Orbits: 1^6 2^117 
+Intersection types between lines in orbit:
+  1^6 [] 
+  2^8 [ 0 ] 
+  2^13 [ 3 ] 
+  2^48 [ 2 ] 
+  2^48 [ 1 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 1, 2, 2, 2, 2, 2 ] 
+Picard rank = 4 
+Trace = -1 
+70. 
+Subgroup order: 4. Measure^(-1): 4608
+Orbits: 1^12 2^24 4^45 
+Intersection types between lines in orbit:
+  1^12 [] 
+  2^6 [ 3 ] 
+  2^18 [ 1 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^6 [ 2, 1, 2 ] 
+  4^6 [ 0, 1, 0 ] 
+  4^32 [ 1, 0, 1 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 1, 2, 2, 2, 4, 4 ] 
+Picard rank = 4 
+Trace = 1 
+71. 
+Subgroup order: 6. Measure^(-1): 576
+Orbits: 1^6 2^33 6^28 
+Intersection types between lines in orbit:
+  1^6 [] 
+  2^1 [ 3 ] 
+  2^8 [ 0 ] 
+  2^12 [ 2 ] 
+  2^12 [ 1 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^3 [ 2, 0, 3, 0, 2 ] 
+  6^12 [ 1, 0, 2, 0, 1 ] 
+  6^12 [ 0, 0, 1, 0, 0 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 1, 2, 2, 2, 6, 6 ] 
+Picard rank = 4 
+Trace = 2 
+72. 
+Subgroup order: 4. Measure^(-1): 1536
+Orbits: 1^6 2^9 4^54 
+Intersection types between lines in orbit:
+  1^6 [] 
+  2^1 [ 3 ] 
+  2^8 [ 0 ] 
+  4^6 [ 1, 3, 1 ] 
+  4^24 [ 1, 1, 1 ] 
+  4^24 [ 0, 1, 0 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 1, 2, 4, 4, 4, 4 ] 
+Picard rank = 4 
+Trace = 3 
+73. 
+Subgroup order: 8. Measure^(-1): 384
+Orbits: 1^12 2^6 8^27 
+Intersection types between lines in orbit:
+  1^12 [] 
+  2^6 [ 1 ] 
+  8^1 [ 0, 1, 2, 3, 2, 1, 0 ] 
+  8^1 [ 2, 1, 0, 3, 0, 1, 2 ] 
+  8^1 [ 1, 1, 1, 3, 1, 1, 1 ] 
+  8^2 [ 2, 0, 2, 1, 2, 0, 2 ] 
+  8^6 [ 0, 0, 0, 1, 0, 0, 0 ] 
+  8^8 [ 0, 0, 1, 1, 1, 0, 0 ] 
+  8^8 [ 1, 0, 0, 1, 0, 0, 1 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 1, 2, 8, 8, 8, 8 ] 
+Picard rank = 4 
+Trace = 3 
+74. 
+Subgroup order: 12. Measure^(-1): 576
+Orbits: 1^12 4^15 6^8 12^10 
+Intersection types between lines in orbit:
+  1^12 [] 
+  4^1 [ 1, 3, 1 ] 
+  4^6 [ 0, 1, 0 ] 
+  4^8 [ 1, 0, 1 ] 
+  6^1 [ 2, 0, 3, 0, 2 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^6 [ 0, 0, 1, 0, 0 ] 
+  12^2 [ 1, 2, 2, 0, 1, 1, 1, 0, 2, 2, 1 ] 
+  12^8 [ 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 1, 2, 4, 4, 6, 6 ] 
+Picard rank = 4 
+Trace = 4 
+75. 
+Subgroup order: 6. Measure^(-1): 6912
+Orbits: 2^36 3^8 6^24 
+Intersection types between lines in orbit:
+  2^12 [ 3 ] 
+  2^24 [ 1 ] 
+  3^2 [ 2, 2 ] 
+  3^6 [ 0, 0 ] 
+  6^24 [ 2, 0, 1, 0, 2 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 2, 2, 2, 2, 3, 3 ] 
+Picard rank = 3 
+Trace = -2 
+76. 
+Subgroup order: 4. Measure^(-1): 768
+Orbits: 1^2 2^29 4^45 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^4 [ 0 ] 
+  2^6 [ 1 ] 
+  2^7 [ 3 ] 
+  2^12 [ 2 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 0, 1, 0 ] 
+  4^4 [ 1, 1, 1 ] 
+  4^6 [ 2, 1, 2 ] 
+  4^16 [ 1, 0, 1 ] 
+  4^16 [ 2, 0, 2 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 2, 2, 2, 2, 4, 4 ] 
+Picard rank = 3 
+Trace = -1 
+77. 
+Subgroup order: 6. Measure^(-1): 216
+Orbits: 2^6 3^8 6^34 
+Intersection types between lines in orbit:
+  2^6 [ 1 ] 
+  3^2 [ 2, 2 ] 
+  3^6 [ 0, 0 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^3 [ 2, 0, 3, 0, 2 ] 
+  6^6 [ 2, 0, 1, 0, 2 ] 
+  6^6 [ 0, 0, 1, 0, 0 ] 
+  6^18 [ 1, 1, 1, 1, 1 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 2, 2, 3, 3, 6, 6 ] 
+Picard rank = 3 
+Trace = 1 
+78. 
+Subgroup order: 12. Measure^(-1): 576
+Orbits: 3^8 4^18 12^12 
+Intersection types between lines in orbit:
+  3^2 [ 2, 2 ] 
+  3^6 [ 0, 0 ] 
+  4^6 [ 1, 3, 1 ] 
+  4^12 [ 0, 1, 0 ] 
+  12^12 [ 1, 2, 0, 0, 1, 1, 1, 0, 0, 2, 1 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 3, 3, 4, 4, 4, 4 ] 
+Picard rank = 3 
+Trace = 2 
+79. 
+Subgroup order: 8. Measure^(-1): 64
+Orbits: 1^2 2^11 8^27 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^1 [ 3 ] 
+  2^2 [ 1 ] 
+  2^4 [ 2 ] 
+  2^4 [ 0 ] 
+  8^1 [ 0, 1, 2, 3, 2, 1, 0 ] 
+  8^1 [ 2, 1, 0, 3, 0, 1, 2 ] 
+  8^1 [ 1, 1, 1, 3, 1, 1, 1 ] 
+  8^2 [ 0, 0, 0, 1, 0, 0, 0 ] 
+  8^2 [ 2, 0, 2, 1, 2, 0, 2 ] 
+  8^4 [ 2, 0, 1, 1, 1, 0, 2 ] 
+  8^4 [ 0, 0, 1, 1, 1, 0, 0 ] 
+  8^4 [ 1, 0, 1, 1, 1, 0, 1 ] 
+  8^4 [ 1, 0, 0, 1, 0, 0, 1 ] 
+  8^4 [ 1, 0, 2, 1, 2, 0, 1 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 2, 2, 8, 8, 8, 8 ] 
+Picard rank = 3 
+Trace = 1 
+80. 
+Subgroup order: 12. Measure^(-1): 96
+Orbits: 1^2 2^5 4^15 6^8 12^10 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^1 [ 3 ] 
+  2^4 [ 0 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 0, 1, 0 ] 
+  4^4 [ 1, 1, 1 ] 
+  4^4 [ 1, 0, 1 ] 
+  4^4 [ 2, 0, 2 ] 
+  6^1 [ 2, 0, 3, 0, 2 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^2 [ 0, 0, 1, 0, 0 ] 
+  6^4 [ 1, 0, 2, 0, 1 ] 
+  12^2 [ 1, 2, 2, 0, 1, 1, 1, 0, 2, 2, 1 ] 
+  12^4 [ 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0 ] 
+  12^4 [ 1, 1, 2, 0, 1, 0, 1, 0, 2, 1, 1 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 1, 2, 2, 4, 4, 6, 6 ] 
+Picard rank = 3 
+Trace = 2 
+81. 
+Subgroup order: 12. Measure^(-1): 576
+Orbits: 2^6 3^4 4^15 6^6 12^10 
+Intersection types between lines in orbit:
+  2^6 [ 3 ] 
+  3^2 [ 2, 2 ] 
+  3^2 [ 0, 0 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^6 [ 2, 1, 2 ] 
+  4^8 [ 1, 0, 1 ] 
+  6^6 [ 2, 0, 1, 0, 2 ] 
+  12^2 [ 1, 2, 0, 0, 1, 1, 1, 0, 0, 2, 1 ] 
+  12^8 [ 2, 1, 1, 0, 2, 0, 2, 0, 1, 1, 2 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 2, 2, 2, 3, 3, 4, 4 ] 
+Picard rank = 2 
+Trace = -2 
+82. 
+Subgroup order: 24. Measure^(-1): 48
+Orbits: 3^4 6^2 8^9 24^6 
+Intersection types between lines in orbit:
+  3^2 [ 2, 2 ] 
+  3^2 [ 0, 0 ] 
+  6^2 [ 2, 0, 1, 0, 2 ] 
+  8^1 [ 0, 1, 2, 3, 2, 1, 0 ] 
+  8^1 [ 2, 1, 0, 3, 0, 1, 2 ] 
+  8^1 [ 1, 1, 1, 3, 1, 1, 1 ] 
+  8^2 [ 0, 0, 1, 1, 1, 0, 0 ] 
+  8^2 [ 1, 0, 0, 1, 0, 0, 1 ] 
+  8^2 [ 2, 0, 2, 1, 2, 0, 2 ] 
+  24^2 [ 1, 1, 1, 2, 2, 0, 1, 0, 0, 1, 2, 1, 2, 1, 0, 0, 1, 0, 2, 2, 1, 1, 1 ] 
+  24^2 [ 1, 1, 0, 2, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 2, 0, 1, 1 ] 
+  24^2 [ 2, 1, 0, 2, 1, 0, 2, 0, 1, 1, 1, 1, 1, 1, 1, 0, 2, 0, 1, 2, 0, 1, 2 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 2, 3, 3, 8, 8, 8, 8 ] 
+Picard rank = 2 
+Trace = 0 
+83. 
+Subgroup order: 12. Measure^(-1): 72
+Orbits: 3^4 4^3 6^8 12^14 
+Intersection types between lines in orbit:
+  3^2 [ 2, 2 ] 
+  3^2 [ 0, 0 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 1, 0, 1 ] 
+  6^1 [ 2, 0, 3, 0, 2 ] 
+  6^1 [ 0, 2, 3, 2, 0 ] 
+  6^6 [ 1, 1, 1, 1, 1 ] 
+  12^2 [ 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0 ] 
+  12^2 [ 1, 2, 2, 0, 1, 1, 1, 0, 2, 2, 1 ] 
+  12^2 [ 2, 1, 1, 0, 2, 0, 2, 0, 1, 1, 2 ] 
+  12^2 [ 1, 2, 0, 0, 1, 1, 1, 0, 0, 2, 1 ] 
+  12^6 [ 1, 2, 1, 1, 1, 0, 1, 1, 1, 2, 1 ] 
+Index = 3 
+Eigenvalues = [ 1, 1, 2, 3, 3, 4, 4, 6, 6 ] 
+Picard rank = 2 
+Trace = 1 
+84. 
+Subgroup order: 20. Measure^(-1): 40
+Orbits: 4^5 5^8 10^2 20^8 
+Intersection types between lines in orbit:
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 0, 0, 0 ] 
+  4^2 [ 2, 1, 2 ] 
+  5^2 [ 2, 1, 1, 2 ] 
+  5^2 [ 1, 0, 0, 1 ] 
+  5^2 [ 0, 1, 1, 0 ] 
+  5^2 [ 1, 2, 2, 1 ] 
+  10^2 [ 2, 0, 2, 0, 1, 0, 2, 0, 2 ] 
+  20^2 [ 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1 ] 
+  20^2 [ 1, 2, 1, 0, 0, 2, 1, 0, 1, 1, 1, 0, 1, 2, 0, 0, 1, 2, 1 ] 
+  20^2 [ 1, 2, 2, 0, 0, 1, 2, 1, 1, 0, 1, 1, 2, 1, 0, 0, 2, 2, 1 ] 
+  20^2 [ 2, 1, 1, 1, 0, 2, 1, 0, 2, 0, 2, 0, 1, 2, 0, 1, 1, 1, 2 ] 
+Index = 4 
+Eigenvalues = [ 1, 1, 2, 4, 4, 5, 5, 5, 5 ] 
+Picard rank = 2 
+Trace = 0 
+85. 
+Subgroup order: 6. Measure^(-1): 288
+Orbits: 2^6 3^20 6^28 
+Intersection types between lines in orbit:
+  2^2 [ 3 ] 
+  2^4 [ 0 ] 
+  3^4 [ 2, 2 ] 
+  3^4 [ 0, 0 ] 
+  3^12 [ 1, 1 ] 
+  6^8 [ 1, 0, 0, 0, 1 ] 
+  6^8 [ 2, 0, 1, 0, 2 ] 
+  6^12 [ 2, 1, 0, 1, 2 ] 
+Index = 5 
+Eigenvalues = [ 1, 1, 1, 2, 2, 3, 3, 3, 3 ] 
+Picard rank = 3 
+Trace = -1 
+86. 
+Subgroup order: 30. Measure^(-1): 60
+Orbits: 2^1 3^2 5^6 6^2 10^4 15^6 30^2 
+Intersection types between lines in orbit:
+  2^1 [ 3 ] 
+  3^2 [ 2, 2 ] 
+  5^2 [ 2, 1, 1, 2 ] 
+  5^2 [ 0, 0, 0, 0 ] 
+  5^2 [ 1, 2, 2, 1 ] 
+  6^2 [ 1, 0, 0, 0, 1 ] 
+  10^2 [ 2, 0, 1, 1, 0, 1, 1, 0, 2 ] 
+  10^2 [ 1, 1, 2, 0, 0, 0, 2, 1, 1 ] 
+  15^2 [ 1, 2, 1, 1, 0, 0, 2, 2, 0, 0, 1, 1, 2, 1 ] 
+  15^2 [ 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1 ] 
+  15^2 [ 2, 1, 0, 2, 0, 1, 1, 1, 1, 0, 2, 0, 1, 2 ] 
+  30^2 [ 2, 1, 1, 1, 1, 0, 2, 1, 1, 0, 2, 0, 2, 1, 0, 1, 2, 0, 2, 0, 1, 1, 2, 0,
+1, 1, 1, 1, 2 ] 
+Index = 5 
+Eigenvalues = [ 1, 1, 2, 3, 3, 5, 5, 5, 5 ] 
+Picard rank = 2 
+Trace = -1 
+87. 
+Subgroup order: 6. Measure^(-1): 576
+Orbits: 1^2 2^35 3^8 6^24 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^3 [ 3 ] 
+  2^8 [ 2 ] 
+  2^12 [ 1 ] 
+  2^12 [ 0 ] 
+  3^2 [ 2, 2 ] 
+  3^6 [ 0, 0 ] 
+  6^12 [ 1, 0, 0, 0, 1 ] 
+  6^12 [ 2, 0, 1, 0, 2 ] 
+Index = 7 
+Eigenvalues = [ 1, 1, 1, 1, 2, 2, 2, 3, 3 ] 
+Picard rank = 4 
+Trace = 0 
+88. 
+Subgroup order: 12. Measure^(-1): 96
+Orbits: 1^2 2^5 3^4 4^15 6^6 12^10 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^1 [ 3 ] 
+  2^4 [ 2 ] 
+  3^2 [ 0, 0 ] 
+  3^2 [ 2, 2 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 2, 1, 2 ] 
+  4^4 [ 0, 0, 0 ] 
+  4^4 [ 1, 1, 1 ] 
+  4^4 [ 1, 0, 1 ] 
+  6^2 [ 2, 0, 1, 0, 2 ] 
+  6^4 [ 1, 0, 0, 0, 1 ] 
+  12^2 [ 1, 2, 0, 0, 1, 1, 1, 0, 0, 2, 1 ] 
+  12^4 [ 2, 1, 1, 0, 2, 0, 2, 0, 1, 1, 2 ] 
+  12^4 [ 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1 ] 
+Index = 7 
+Eigenvalues = [ 1, 1, 1, 2, 2, 3, 3, 4, 4 ] 
+Picard rank = 3 
+Trace = 0 
+89. 
+Subgroup order: 10. Measure^(-1): 80
+Orbits: 2^10 5^12 10^16 
+Intersection types between lines in orbit:
+  2^2 [ 3 ] 
+  2^4 [ 1 ] 
+  2^4 [ 0 ] 
+  5^2 [ 2, 1, 1, 2 ] 
+  5^2 [ 1, 0, 0, 1 ] 
+  5^2 [ 0, 1, 1, 0 ] 
+  5^2 [ 1, 2, 2, 1 ] 
+  5^4 [ 0, 0, 0, 0 ] 
+  10^4 [ 2, 0, 1, 1, 0, 1, 1, 0, 2 ] 
+  10^4 [ 2, 0, 2, 0, 1, 0, 2, 0, 2 ] 
+  10^4 [ 1, 1, 2, 0, 0, 0, 2, 1, 1 ] 
+  10^4 [ 1, 0, 1, 0, 0, 0, 1, 0, 1 ] 
+Index = 7 
+Eigenvalues = [ 1, 1, 1, 2, 2, 5, 5, 5, 5 ] 
+Picard rank = 3 
+Trace = 0 
+90. 
+Subgroup order: 14. Measure^(-1): 28
+Orbits: 2^1 7^18 14^8 
+Intersection types between lines in orbit:
+  2^1 [ 3 ] 
+  7^2 [ 1, 1, 2, 2, 1, 1 ] 
+  7^2 [ 1, 2, 1, 1, 2, 1 ] 
+  7^2 [ 1, 2, 0, 0, 2, 1 ] 
+  7^2 [ 0, 0, 0, 0, 0, 0 ] 
+  7^2 [ 2, 0, 1, 1, 0, 2 ] 
+  7^2 [ 0, 1, 2, 2, 1, 0 ] 
+  7^2 [ 2, 1, 1, 1, 1, 2 ] 
+  7^4 [ 1, 1, 1, 1, 1, 1 ] 
+  14^2 [ 1, 1, 2, 1, 2, 0, 0, 0, 2, 1, 2, 1, 1 ] 
+  14^2 [ 2, 1, 1, 0, 2, 1, 0, 1, 2, 0, 1, 1, 2 ] 
+  14^2 [ 2, 0, 2, 1, 1, 1, 0, 1, 1, 1, 2, 0, 2 ] 
+  14^2 [ 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1 ] 
+Index = 7 
+Eigenvalues = [ 1, 1, 2, 7, 7, 7, 7, 7, 7 ] 
+Picard rank = 2 
+Trace = 0 
+91. 
+Subgroup order: 1. Measure^(-1): 696729600
+Orbits: 1^240 
+Intersection types between lines in orbit:
+  1^240 [] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 1, 1, 1, 1 ] 
+Picard rank = 9 
+Trace = 9 
+92. 
+Subgroup order: 2. Measure^(-1): 5806080
+Orbits: 1^126 2^57 
+Intersection types between lines in orbit:
+  1^126 [] 
+  2^1 [ 3 ] 
+  2^56 [ 0 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 1, 1, 1, 2 ] 
+Picard rank = 8 
+Trace = 7 
+93. 
+Subgroup order: 2. Measure^(-1): 184320
+Orbits: 1^60 2^90 
+Intersection types between lines in orbit:
+  1^60 [] 
+  2^2 [ 3 ] 
+  2^24 [ 1 ] 
+  2^64 [ 0 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 1, 1, 2, 2 ] 
+Picard rank = 7 
+Trace = 5 
+94. 
+Subgroup order: 3. Measure^(-1): 311040
+Orbits: 1^72 3^56 
+Intersection types between lines in orbit:
+  1^72 [] 
+  3^2 [ 2, 2 ] 
+  3^54 [ 0, 0 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 1, 1, 3, 3 ] 
+Picard rank = 7 
+Trace = 6 
+95. 
+Subgroup order: 2. Measure^(-1): 18432
+Orbits: 1^26 2^107 
+Intersection types between lines in orbit:
+  1^26 [] 
+  2^3 [ 3 ] 
+  2^8 [ 2 ] 
+  2^48 [ 1 ] 
+  2^48 [ 0 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 1, 2, 2, 2 ] 
+Picard rank = 6 
+Trace = 3 
+96. 
+Subgroup order: 6. Measure^(-1): 8640
+Orbits: 1^30 2^21 3^32 6^12 
+Intersection types between lines in orbit:
+  1^30 [] 
+  2^1 [ 3 ] 
+  2^20 [ 0 ] 
+  3^2 [ 2, 2 ] 
+  3^30 [ 0, 0 ] 
+  6^12 [ 1, 0, 0, 0, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 1, 2, 3, 3 ] 
+Picard rank = 6 
+Trace = 4 
+97. 
+Subgroup order: 4. Measure^(-1): 15360
+Orbits: 1^40 2^10 4^45 
+Intersection types between lines in orbit:
+  1^40 [] 
+  2^10 [ 1 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 2, 1, 2 ] 
+  4^10 [ 0, 1, 0 ] 
+  4^32 [ 0, 0, 0 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 1, 2, 4, 4 ] 
+Picard rank = 6 
+Trace = 5 
+98. 
+Subgroup order: 2. Measure^(-1): 6144
+Orbits: 1^8 2^116 
+Intersection types between lines in orbit:
+  1^8 [] 
+  2^4 [ 3 ] 
+  2^32 [ 2 ] 
+  2^32 [ 0 ] 
+  2^48 [ 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 2, 2, 2, 2 ] 
+Picard rank = 5 
+Trace = 1 
+99. 
+Subgroup order: 6. Measure^(-1): 1152
+Orbits: 1^12 2^30 3^16 6^20 
+Intersection types between lines in orbit:
+  1^12 [] 
+  2^2 [ 3 ] 
+  2^12 [ 1 ] 
+  2^16 [ 0 ] 
+  3^2 [ 2, 2 ] 
+  3^14 [ 0, 0 ] 
+  6^4 [ 2, 0, 1, 0, 2 ] 
+  6^16 [ 1, 0, 0, 0, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 2, 2, 3, 3 ] 
+Picard rank = 5 
+Trace = 2 
+100. 
+Subgroup order: 3. Measure^(-1): 2592
+Orbits: 1^12 3^76 
+Intersection types between lines in orbit:
+  1^12 [] 
+  3^4 [ 2, 2 ] 
+  3^36 [ 0, 0 ] 
+  3^36 [ 1, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 3, 3, 3, 3 ] 
+Picard rank = 5 
+Trace = 3 
+101. 
+Subgroup order: 4. Measure^(-1): 768
+Orbits: 1^14 2^23 4^45 
+Intersection types between lines in orbit:
+  1^14 [] 
+  2^1 [ 3 ] 
+  2^4 [ 2 ] 
+  2^6 [ 1 ] 
+  2^12 [ 0 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 2, 1, 2 ] 
+  4^4 [ 1, 1, 1 ] 
+  4^6 [ 0, 1, 0 ] 
+  4^16 [ 0, 0, 0 ] 
+  4^16 [ 1, 0, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 2, 2, 4, 4 ] 
+Picard rank = 5 
+Trace = 3 
+102. 
+Subgroup order: 5. Measure^(-1): 1200
+Orbits: 1^20 5^44 
+Intersection types between lines in orbit:
+  1^20 [] 
+  5^2 [ 1, 2, 2, 1 ] 
+  5^2 [ 2, 1, 1, 2 ] 
+  5^10 [ 0, 1, 1, 0 ] 
+  5^10 [ 1, 0, 0, 1 ] 
+  5^20 [ 0, 0, 0, 0 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 1, 5, 5, 5, 5 ] 
+Picard rank = 5 
+Trace = 4 
+103. 
+Subgroup order: 6. Measure^(-1): 432
+Orbits: 1^6 2^3 3^40 6^18 
+Intersection types between lines in orbit:
+  1^6 [] 
+  2^1 [ 3 ] 
+  2^2 [ 0 ] 
+  3^4 [ 2, 2 ] 
+  3^12 [ 0, 0 ] 
+  3^24 [ 1, 1 ] 
+  6^6 [ 2, 1, 0, 1, 2 ] 
+  6^12 [ 1, 0, 0, 0, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 2, 3, 3, 3, 3 ] 
+Picard rank = 4 
+Trace = 1 
+104. 
+Subgroup order: 4. Measure^(-1): 256
+Orbits: 1^4 2^28 4^45 
+Intersection types between lines in orbit:
+  1^4 [] 
+  2^2 [ 3 ] 
+  2^8 [ 2 ] 
+  2^8 [ 0 ] 
+  2^10 [ 1 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 2, 1, 2 ] 
+  4^2 [ 0, 1, 0 ] 
+  4^8 [ 0, 0, 0 ] 
+  4^8 [ 1, 1, 1 ] 
+  4^8 [ 2, 0, 2 ] 
+  4^16 [ 1, 0, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 2, 2, 2, 4, 4 ] 
+Picard rank = 4 
+Trace = 1 
+105. 
+Subgroup order: 12. Measure^(-1): 192
+Orbits: 1^4 2^4 3^12 4^15 6^2 12^10 
+Intersection types between lines in orbit:
+  1^4 [] 
+  2^4 [ 1 ] 
+  3^2 [ 2, 2 ] 
+  3^10 [ 0, 0 ] 
+  4^1 [ 1, 3, 1 ] 
+  4^2 [ 2, 1, 2 ] 
+  4^4 [ 0, 1, 0 ] 
+  4^8 [ 0, 0, 0 ] 
+  6^2 [ 2, 0, 1, 0, 2 ] 
+  12^2 [ 1, 2, 0, 0, 1, 1, 1, 0, 0, 2, 1 ] 
+  12^8 [ 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 2, 3, 3, 4, 4 ] 
+Picard rank = 4 
+Trace = 2 
+106. 
+Subgroup order: 10. Measure^(-1): 120
+Orbits: 1^6 2^7 5^24 10^10 
+Intersection types between lines in orbit:
+  1^6 [] 
+  2^1 [ 3 ] 
+  2^6 [ 0 ] 
+  5^2 [ 2, 1, 1, 2 ] 
+  5^2 [ 1, 2, 2, 1 ] 
+  5^6 [ 1, 0, 0, 1 ] 
+  5^6 [ 0, 1, 1, 0 ] 
+  5^8 [ 0, 0, 0, 0 ] 
+  10^2 [ 2, 0, 1, 1, 0, 1, 1, 0, 2 ] 
+  10^2 [ 1, 1, 2, 0, 0, 0, 2, 1, 1 ] 
+  10^6 [ 1, 0, 1, 0, 0, 0, 1, 0, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 2, 5, 5, 5, 5 ] 
+Picard rank = 4 
+Trace = 2 
+107. 
+Subgroup order: 6. Measure^(-1): 144
+Orbits: 1^8 2^2 3^6 6^35 
+Intersection types between lines in orbit:
+  1^8 [] 
+  2^2 [ 2 ] 
+  3^6 [ 1, 1 ] 
+  6^1 [ 1, 1, 3, 1, 1 ] 
+  6^2 [ 1, 2, 1, 2, 1 ] 
+  6^2 [ 2, 1, 1, 1, 2 ] 
+  6^2 [ 0, 1, 2, 1, 0 ] 
+  6^4 [ 1, 1, 0, 1, 1 ] 
+  6^6 [ 1, 0, 1, 0, 1 ] 
+  6^6 [ 0, 1, 1, 1, 0 ] 
+  6^12 [ 0, 0, 0, 0, 0 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 1, 2, 3, 3, 6, 6 ] 
+Picard rank = 4 
+Trace = 3 
+108. 
+Subgroup order: 4. Measure^(-1): 128
+Orbits: 2^4 4^58 
+Intersection types between lines in orbit:
+  2^4 [ 1 ] 
+  4^2 [ 1, 3, 1 ] 
+  4^4 [ 2, 1, 2 ] 
+  4^4 [ 0, 1, 0 ] 
+  4^8 [ 0, 0, 0 ] 
+  4^8 [ 2, 0, 2 ] 
+  4^16 [ 1, 1, 1 ] 
+  4^16 [ 1, 2, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 2, 2, 4, 4, 4, 4 ] 
+Picard rank = 3 
+Trace = 1 
+109. 
+Subgroup order: 15. Measure^(-1): 60
+Orbits: 1^2 3^6 5^14 15^10 
+Intersection types between lines in orbit:
+  1^2 [] 
+  3^2 [ 2, 2 ] 
+  3^4 [ 0, 0 ] 
+  5^2 [ 2, 1, 1, 2 ] 
+  5^2 [ 0, 0, 0, 0 ] 
+  5^2 [ 1, 2, 2, 1 ] 
+  5^4 [ 1, 0, 0, 1 ] 
+  5^4 [ 0, 1, 1, 0 ] 
+  15^2 [ 1, 2, 1, 1, 0, 0, 2, 2, 0, 0, 1, 1, 2, 1 ] 
+  15^2 [ 2, 1, 0, 2, 0, 1, 1, 1, 1, 0, 2, 0, 1, 2 ] 
+  15^6 [ 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 3, 3, 5, 5, 5, 5 ] 
+Picard rank = 3 
+Trace = 1 
+110. 
+Subgroup order: 6. Measure^(-1): 48
+Orbits: 1^2 2^5 3^2 6^37 
+Intersection types between lines in orbit:
+  1^2 [] 
+  2^1 [ 3 ] 
+  2^2 [ 0 ] 
+  2^2 [ 2 ] 
+  3^2 [ 1, 1 ] 
+  6^1 [ 1, 1, 3, 1, 1 ] 
+  6^2 [ 2, 1, 0, 1, 2 ] 
+  6^2 [ 0, 1, 1, 1, 0 ] 
+  6^2 [ 0, 1, 2, 1, 0 ] 
+  6^2 [ 1, 2, 1, 2, 1 ] 
+  6^2 [ 2, 1, 1, 1, 2 ] 
+  6^4 [ 0, 0, 0, 0, 0 ] 
+  6^4 [ 2, 0, 2, 0, 2 ] 
+  6^4 [ 1, 1, 2, 1, 1 ] 
+  6^4 [ 1, 1, 0, 1, 1 ] 
+  6^10 [ 1, 0, 1, 0, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 2, 2, 3, 3, 6, 6 ] 
+Picard rank = 3 
+Trace = 1 
+111. 
+Subgroup order: 7. Measure^(-1): 28
+Orbits: 1^2 7^34 
+Intersection types between lines in orbit:
+  1^2 [] 
+  7^2 [ 1, 1, 2, 2, 1, 1 ] 
+  7^2 [ 1, 2, 1, 1, 2, 1 ] 
+  7^2 [ 1, 2, 0, 0, 2, 1 ] 
+  7^2 [ 2, 0, 1, 1, 0, 2 ] 
+  7^2 [ 0, 1, 2, 2, 1, 0 ] 
+  7^2 [ 2, 1, 1, 1, 1, 2 ] 
+  7^4 [ 1, 1, 1, 1, 1, 1 ] 
+  7^4 [ 0, 1, 1, 1, 1, 0 ] 
+  7^4 [ 1, 0, 1, 1, 0, 1 ] 
+  7^4 [ 1, 1, 0, 0, 1, 1 ] 
+  7^6 [ 0, 0, 0, 0, 0, 0 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 1, 7, 7, 7, 7, 7, 7 ] 
+Picard rank = 3 
+Trace = 2 
+112. 
+Subgroup order: 8. Measure^(-1): 16
+Orbits: 4^2 8^29 
+Intersection types between lines in orbit:
+  4^2 [ 1, 1, 1 ] 
+  8^1 [ 1, 1, 1, 3, 1, 1, 1 ] 
+  8^2 [ 0, 1, 1, 1, 1, 1, 0 ] 
+  8^2 [ 1, 2, 1, 1, 1, 2, 1 ] 
+  8^2 [ 2, 0, 2, 0, 2, 0, 2 ] 
+  8^2 [ 0, 1, 2, 2, 2, 1, 0 ] 
+  8^2 [ 1, 1, 2, 1, 2, 1, 1 ] 
+  8^2 [ 2, 1, 0, 2, 0, 1, 2 ] 
+  8^2 [ 1, 0, 1, 1, 1, 0, 1 ] 
+  8^2 [ 2, 1, 1, 1, 1, 1, 2 ] 
+  8^2 [ 0, 0, 0, 0, 0, 0, 0 ] 
+  8^2 [ 1, 1, 0, 1, 0, 1, 1 ] 
+  8^4 [ 1, 2, 1, 0, 1, 2, 1 ] 
+  8^4 [ 1, 1, 1, 2, 1, 1, 1 ] 
+Index = 8 
+Eigenvalues = [ 1, 1, 2, 4, 4, 8, 8, 8, 8 ] 
+Picard rank = 2 
+Trace = 1 
