@@ -1,4 +1,6 @@
-/* This magma code is derived from code accompanying the article B. Banwait, F. Fité, D. Loughran - Del Pezzo surfaces over finite fields and their Frobenius traces (see https://sites.google.com/site/danielloughran/publications). */
+/* This Magma code accompanies the article M.T. Trip - Existence of Minimal del Pezzo Surfaces of Degree 1 with Conic Bundles over Finite Fields.*/
+
+/* It is based on code accompanying the article B. Banwait, F. Fité, D. Loughran - Del Pezzo surfaces over finite fields and their Frobenius traces (see https://sites.google.com/site/danielloughran/publications).*/
 
 /************************** Degree 1 *******************************
 *                                                                  *

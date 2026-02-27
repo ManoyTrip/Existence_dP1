@@ -1,7 +1,11 @@
+/* This Magma code accompanies the article M.T. Trip - Existence of Minimal del Pezzo Surfaces of Degree 1 with Conic Bundles over Finite Fields.*/
+
+/*******************************************************************/
+
 /*input: 
-    GenListdP1
-    GroupListdP1
-    multiplicitiesDP2
+    genListdP1
+    groupListdP1
+    orbitIntersectionsListdP2
 e.g., after running the E7 and E8 file */
 
 /* We produce a sequence "dP2Blowup1pt" where the i-th position contains the number (Urabe numbering) 
@@ -10,21 +14,23 @@ e.g., after running the E7 and E8 file */
 dP2Blowup1pt := [];
 dP1TypeBlowdown := [];
 
+/* We construct the sequence "dP1TypeBlowdown", which for every type of dP1 contains a set of all possible types of dP2 obtained from blowing down a line defined over Fq*/
 for i in [1..112] do
-  gen := GenListdP1[i];
-  orbitsDP1 := Orbits(GroupListdP1[i]);
+  gen := genListdP1[i];
+  orbitsdP1 := Orbits(groupListdP1[i]);
   dP1TypeBlowdown[i] := { };
-  /*For each line which is defined over the base field, we determine which type of DP2 is obtained upon contracting     this line.*/
-  for O in orbitsDP1 do
+  /*For each line which is defined over the base field, we determine which type of dP2 is obtained upon contracting this line.*/
+  for O in orbitsdP1 do
     if #O eq 1 then
-      orbitsDP2 := contract_orbit(O, orbitsDP1, M1);
-      multiplicitiesDP2 := intersection_pattern(gen, orbitsDP2, M1);
-      typeDP2 := Position(OrbitIntersectionsListdP2, multiplicitiesDP2);
-      Append(~dP1TypeBlowdown[i], typeDP2);
+      orbitsdP2 := contract_orbit(O, orbitsdP1, M1);
+      multiplicitiesdP2 := intersection_pattern(gen, orbitsdP2, M1);
+      typedP2 := Position(orbitIntersectionsListdP2, multiplicitiesdP2);
+      Append(~dP1TypeBlowdown[i], typedP2);
     end if;
   end for;
 end for;
 
+/* We construct the sequence "dP2Blowup1pt", which consists for every type of dP2, the type of dP1 obtained by blowing up a sufficiently general rational point. In the process, we confirm that the obtained dP1 type is uniquely determined by the dP2 type.*/ 
 uniqueBlowup := true;
 for i in [1..60] do
   cnt := 0;
@@ -39,13 +45,4 @@ for i in [1..60] do
   if cnt gt 1 then
     uniqueBlowup := false;
   end if;
-end for;
-
-    
-  
-    
-
-/*Latex table formatting */
-for i in [1..60] do
-  printf "%o \& %o \& %o \\\\ \n", i, dP2Blowup1pt[i], ;
 end for;

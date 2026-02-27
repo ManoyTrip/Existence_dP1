@@ -1,0 +1,7 @@
+/* This Magma code accompanies the article M.T. Trip - Existence of Minimal del Pezzo Surfaces of Degree 1 with Conic Bundles over Finite Fields.*/
+
+restore "ModuleE6E7E8_noAIM";
+load "Functions";
+load "E7";
+load "E8";
+save "E7E8_statefile";

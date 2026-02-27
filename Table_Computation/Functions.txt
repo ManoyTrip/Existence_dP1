@@ -1,8 +1,8 @@
-/* renamed:
-- Sort_seq_by_multiplicity -> sort_seq_by_multiplicity
-- Orbit_type -> orbit_type
-- g -> gen
-- O/o -> orb
+/* This Magma code accompanies the article M.T. Trip - Existence of Minimal del Pezzo Surfaces of Degree 1 with Conic Bundles over Finite Fields.*/
+
+/* Parts are based on code accompanying the article B. Banwait, F. Fité, D. Loughran - Del Pezzo surfaces over finite fields and their Frobenius traces (see https://sites.google.com/site/danielloughran/publications).*/
+
+/*******************************************************************/
 
 /* Returns true if the given orbit consists of skew curves (according to the intersection matrix M). */
 is_skew := function(orbit, M)
@@ -68,7 +68,7 @@ determine_index := function(deg, orbits, orbitList, M)
     return index;
   end if;
  
-  /* We check if index geq 2, and make a list of all Frob-exceptional sets of size 2 */
+  /* We check if index geq 2, and make a list of all skew Frob-stable sets of size 2 */
   S2 := {};
   S2 := combine_skew_orbits(2, S1, S1, S2, M);
   if 2 in orbitList then
@@ -79,7 +79,7 @@ determine_index := function(deg, orbits, orbitList, M)
     index := 2;
   end if;
 
-  /* We check if index geq 3, and make a list of all Frob-exceptional sets of size 3 */
+  /* We check if index geq 3, and make a list of all skew Frob-stable sets of size 3 */
   S3 := {};
   S3 := combine_skew_orbits(3, S2, S1, S3, M);
   if 3 in orbitList then
@@ -91,7 +91,7 @@ determine_index := function(deg, orbits, orbitList, M)
   end if;
 
 
-  /* We check if index geq 4, and make a list of all Frob-exceptional sets of size 4 */
+  /* We check if index geq 4, and make a list of all skew Frob-stable sets of size 4 */
   S4 := {};
   S4 := combine_skew_orbits(4, S3, S1, S4, M);
   if 2 in orbitList then
@@ -106,7 +106,7 @@ determine_index := function(deg, orbits, orbitList, M)
   end if;
 
 
-  /* We check if index geq 5, and make a list of all Frob-exceptional sets of size 5 */
+  /* We check if index geq 5, and make a list of all skew Frob-stable sets of size 5 */
   S5 := {};
   S5 := combine_skew_orbits(5, S4, S1, S5, M);
  
@@ -122,7 +122,7 @@ determine_index := function(deg, orbits, orbitList, M)
     index := 5;
   end if;
 
-  /* We check if index geq 6, and make a list of all Frob-exceptional sets of size 6 */
+  /* We check if index geq 6, and make a list of all skew Frob-stable sets of size 6 */
   S6 := {};
   S6 := combine_skew_orbits(6, S5, S1, S6, M);
  
@@ -142,7 +142,7 @@ determine_index := function(deg, orbits, orbitList, M)
     index := 6;
   end if;
 
-  /* We check if index geq 7, and make a list of all Frob-exceptional sets of size 7 */
+  /* We check if index geq 7, and make a list of all skew Frob-stable sets of size 7 */
   S7 := {};
   S7 := combine_skew_orbits(7, S6, S1, S7, M);
  
@@ -163,7 +163,7 @@ determine_index := function(deg, orbits, orbitList, M)
   end if;
 
   if deg eq 1 then
-    /* We check if index geq 8, and make a list of all Frob-exceptional sets of size 8 */
+    /* We check if index geq 8, and make a list of all skew Frob-stable sets of size 8 */
     S8 := {};
     S8 := combine_skew_orbits(8, S7, S1, S8, M);
     
@@ -251,7 +251,7 @@ intersection_pattern := function(gen, orbits, M)
   return typesMultiplicity;
 end function;
 
-
+/* Determines a list of the sizes of all the Frob-orbits of the lines*/
 orbit_type := function(orbits)
  T:=[];
  for orb in orbits do
