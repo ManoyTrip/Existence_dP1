@@ -2,9 +2,12 @@
 
 /*******************************************************************/
 
+/*In this code, we compute a lower bound for the value of q, above which a del Pezzo surface of a given type of dP1 with a rational line exists. We obtain a lower bound for even and odd values of q separately. 
+*/
+
 P<q> := PolynomialRing(IntegerRing());
 PP<sqrtq> := PolynomialRing(RealField());
-pointsOnLinesUpperBound := [];
+pointsOnLinesUpperBound := [P| ];
 solutionEven := []; 
 solutionOdd := [];
 
@@ -24,17 +27,18 @@ for i in [1..60] do
 
   numberRatlPtsdP2 := q^2 + traceListdP2[i]*q + 1;
   
-  /* The bad locus consists of the points that lie on the lines + the points that lie on the ramification divisor. If q is odd, this is a quartic (genus 3 curve, we use Hasse-Weil upper bound). If q is even, this is a union of two conics (genus 0 curves).*/
+  /* The bad locus consists of the points that lie on the lines + the points that lie on the ramification divisor R. If q is odd, R is a quartic (genus 3 curve, we use Hasse-Weil upper bound). If q is even, R is a union of two conics (genus 0 curves).*/
   badLocusUpperBoundOdd := Evaluate(pointsOnLinesUpperBound[i], sqrtq^2) + sqrtq^2 + 6*sqrtq + 1;
   badLocusUpperBoundEven := pointsOnLinesUpperBound[i] + 2*(q + 1);
 
   /* We compute a lower bound "outsideBadLocusOdd" for the number of rational points outside the bad locus, in case q is odd. If this number is positive, there is at least one rational point outside of the bad locus. We pick the largest root of outsideBadLocusOdd. The function is increasing, so for q above this value, there are points outside the bad locus. */ 
   outsideBadLocusOdd:= Evaluate(numberRatlPtsdP2, sqrtq^2) - badLocusUpperBoundOdd - 1;
   roots := Roots(outsideBadLocusOdd);
+  #roots;
   maxroot := 3;
   for root in roots do
     if root[1] gt 0 and (root[1])^2 gt maxroot then
-      maxroot := (root[1])^2;
+      maxroot := Ceiling((root[1])^2);
     end if;
   end for;
   solutionOdd[i] := maxroot;
@@ -51,18 +55,17 @@ for i in [1..60] do
       maxroot := root[1];
     end if;
   end for;
-  
+  solutionEven[i] := maxroot;
   j := 1;
   while 2^j lt solutionEven[i] do
     j := j+1;
   end while;
   solutionEven[i] := 2^j;
-  
 end for;
 
-
+/*output in LateX table format*/
 for i in [1..112] do
-  ind := Index(dp2blowupin1pt, i);
+  ind := Index(dP2Blowup1pt, i);
   if ind gt 0 then
     printf "%o \& $q \\geq %o, %o$\\\\ \n", i, solutionEven[ind], solutionOdd[ind];
   end if;

@@ -10,7 +10,7 @@ e.g., after running the E7 and E8 file */
 
 /* We produce a sequence "dP2Blowup1pt" where the i-th position contains the number (Urabe numbering) 
    of the type of dP1 obtained from blowing up a point in general position on a dP2 
-   of type i (Urabe numbering) */
+   of type i (Trepalin numbering) */
 dP2Blowup1pt := [];
 dP1TypeBlowdown := [];
 
@@ -18,14 +18,14 @@ dP1TypeBlowdown := [];
 for i in [1..112] do
   gen := genListdP1[i];
   orbitsdP1 := Orbits(groupListdP1[i]);
-  dP1TypeBlowdown[i] := { };
+  dP1TypeBlowdown[i] := {IntegerRing() | };
   /*For each line which is defined over the base field, we determine which type of dP2 is obtained upon contracting this line.*/
   for O in orbitsdP1 do
     if #O eq 1 then
       orbitsdP2 := contract_orbit(O, orbitsdP1, M1);
       multiplicitiesdP2 := intersection_pattern(gen, orbitsdP2, M1);
       typedP2 := Position(orbitIntersectionsListdP2, multiplicitiesdP2);
-      Append(~dP1TypeBlowdown[i], typedP2);
+      Include(~(dP1TypeBlowdown[i]), typedP2);
     end if;
   end for;
 end for;
@@ -46,3 +46,5 @@ for i in [1..60] do
     uniqueBlowup := false;
   end if;
 end for;
+
+uniqueBlowup;
