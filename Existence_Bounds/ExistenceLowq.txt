@@ -1,0 +1,325 @@
+/* This Magma code accompanies the article M.T. Trip - Existence of Minimal del Pezzo Surfaces of Degree 1 with Conic Bundles over Finite Fields.*/
+
+/* This magma code is largely adapted from code accompanying the article B. Banwait, F. Fité, D. Loughran - Del Pezzo surfaces over finite fields and their Frobenius traces. (see https://sites.google.com/site/danielloughran/publications).*/
+
+Its purpose is to search for collections of closed points in P^2 over a finite field F_q in general position. If they exist it finds them (usually very quickly), and if they don't exist it proves it. Proving certain collections don't exist can be quite time consuming for q > 10. The criterion for determining whether points lie in general position is Lemma 2.5 from the paper.
+*/
+
+/*Adaptations wrt BFL:
+  Added extra line to PStart 
+  Looping contains all Fq^t points*/
+
+/* Given a set of points P over a field k, outputs true iff no three are colinear. */
+NoThreeCollinear := function(P, k)
+ for Three in Subsets(P,3) do
+  T:=SetToSequence(Three);
+  M:=Matrix(k,3,3,T);
+  if Determinant(M) eq 0 then
+   return false;
+  end if;
+ end for;
+ return true;
+end function;
+
+/* Given a set of points P over a field k, outputs true iff no six lie on a conic */
+NoSixCoconic := function(P, k)
+ for Six in Subsets(P,6) do
+  T:=SetToSequence(Six);
+  R:=[];
+  for t in T do
+   Rt:=[t[1]^2,t[2]^2,t[3]^2,t[1]*t[2],t[1]*t[3],t[2]*t[3]];
+   R:=Append(R,Rt);   
+  end for;
+  M:=Matrix(k,6,6,R);
+  if Determinant(M) eq 0 then 
+   return false;
+  end if;
+ end for;
+ return true;
+end function;
+
+/* Given a set of points P over a field k, outputs true iff no eight lie on a cubic with a singularity at one of the points */
+NoEightCosingularcubic := function(P, k)
+ for Eight in Subsets(P,8) do
+  T:=SetToSequence(Eight);
+  R:=[];
+  for t in T do
+   Rt:=[ t[1]^3, t[2]^3, t[3]^3, t[1]^2*t[2], t[1]^2*t[3], t[1]*t[2]^2, t[2]^2*t[3], t[1]*t[3]^2, t[2]*t[3]^2, t[1]*t[2]*t[3] ];
+   R:=Append(R,Rt);   
+  end for;
+  for t in T do
+   dx:=[3*t[1]^2,0,0,2*t[1]*t[2],2*t[1]*t[3],t[2]^2,0,t[3]^2,0,t[2]*t[3]];
+   dy:=[0,3*t[2]^2,0,t[1]^2,0,2*t[1]*t[2],2*t[2]*t[3],0,t[3]^2,t[1]*t[3]];
+   dz:=[0,0,3*t[3]^2,0,t[1]^2,0,t[2]^2,2*t[1]*t[3],2*t[2]*t[3],t[1]*t[2]];
+   M:=Matrix(k,11,10, R cat [dx, dy, dz]);
+   if Rank(M) ne 10 then
+    return false;
+   end if;
+  end for;
+ end for;
+ return true;
+end function;
+
+/*Combines the previous three functions to check whether a collection of points P over a field k lies in general position */
+InGeneralPos := function(P, k)
+ if NoThreeCollinear(P,k) and NoSixCoconic(P,k) and NoEightCosingularcubic(P,k) then
+  return true;
+ else
+  return false;
+ end if;
+end function;
+
+/* Given a selection of points PStart over a finite field k, outputs all rational points which lie in general position which respect to PStart */
+RemainingPointsInGenPos := function(PStart,k)
+ r:=#PStart;
+ Out:={};
+ NonZero:=Exclude(Set(k),0);
+ for x,y in NonZero do
+  P:=PStart join {[x,y,1]};
+  if #P eq r+1 and InGeneralPos(P,k) then
+    Out:=Out join {[x,y,1]};
+  end if;
+ end for;
+ return Out;
+end function;
+
+/* Input: a prime power q, a "type" T, and a boolean variable display. Returns true iff there are a collection of closed points of Type T in P^2 over F_q in general position. If display = true, then it also outputs an example of such a collection of points, if it exists.
+
+Examples: T=[7] - 7 rational points in general position. T=[1,1,1] - 1 rational point, 1 closed point degree 2, 1 closed point degree 3. T=[4,2] - 4 rational points and 2 closed points of degree 2. T = [0,0,0,0,0,1] - 1 closed point degree 6 */
+HasPointsInGenPos := function(q,T,display)
+ r:=0; //r is the number of points over kbar corresponding to the type T
+ for t in [1..#T] do
+  r := r + t*T[t];
+ end for;
+
+ max:=1;   /*max = largest d for which a field field of order q^d occurs*/
+ embed:=1; /*embed = largest d for which all relevant fields embed into a finite field of order q^d */
+ for t in [1..#T] do
+  if T[t] ne 0 then
+   max:=t;
+   embed:=LCM(embed,t);
+  end if;
+ end for;
+
+ /*Set-up the relevant finite fields which will be needed*/
+ k1<u1>:=FiniteField(q);
+ k2<u2>:=FiniteField(q^2);
+ k3<u3>:=FiniteField(q^3);
+ k4<u4>:=FiniteField(q^4);
+ k5<u5>:=FiniteField(q^5);
+ k6<u6>:=FiniteField(q^6);
+ k7<u7>:=FiniteField(q^7);
+ k8<u8>:=FiniteField(q^8);
+ L:=FiniteField(q^embed);
+ Fields:=[k1,k2,k3,k4,k5,k6,k7,k8];
+
+
+ PStart:={}; /*If some of the points are rational, then WLOG we may assume that they are [1,0,0], [0,1,0], etc... */
+ if T[1] gt 0 then PStart:=PStart join { [1,0,0] }; end if;
+ if T[1] gt 1 then PStart:=PStart join { [0,1,0] }; end if;
+ if T[1] gt 2 then PStart:=PStart join { [0,0,1] }; end if;
+ if T[1] gt 3 then PStart:=PStart join { [1,1,1] }; end if;
+ if T[1] le 2 and #T gt 1 and T[2] gt 0 then PStart := PStart join {[u2, -u2, 1], [u2^q, (-u2)^q, 1]}; end if;
+ 
+
+ /*Create the set which we shall loop over. We loop over points defined over a finite extension and then force them to be Galois invariant by taking conjugates.
+ The first part is ad hoc and just makes sure Looping has the right universe*/
+ Looping:=[Set(L)];
+ Looping:=Exclude(Looping, Set(L));
+ LoopingDiff:=Looping;
+
+ for t in [1..#T] do
+  if t eq 1 and T[1] gt 4 then
+   for tt in [1..T[1] - 4] do
+    Looping:=Append(Looping, Set(Fields[1]));
+   end for;
+  end if; 
+  if t eq 2 and T[1] le 2 and T[2] gt 1 then
+   for tt in [1..T[t]-1] do
+    Looping:=Append(Looping, Set(Fields[t]));
+   end for;
+  elif t eq 2 then
+    for tt in [1..T[t]] do
+    Looping:=Append(Looping, Set(Fields[t]));
+   end for;
+  end if;
+  if t gt 2 then
+   for tt in [1..T[t]] do
+    Looping:=Append(Looping, Set(Fields[t]));
+   end for;
+  end if;
+ end for;
+
+ /*First look at random collections of points to try to find some in general position. This speeds the algorithm up a lot.*/
+ for i in [1..10000] do
+  x:=Random(CartesianProduct(Looping));
+  y:=Random(CartesianProduct(Looping));
+  P:=PStart;
+  for t in [1..#x] do
+   for j in [0..max-1] do
+    P:=P join { [x[t]^(q^j), y[t]^(q^j), 1] };  /*Take the conjugates of the given point to force a Galois invariant set*/
+    end for;	
+  end for;
+  if #P eq r and InGeneralPos(P,L) then  /*Found points in general position*/
+   if display then
+    print q, T, P;
+    return true;
+   end if;
+   return q, T, true;
+  end if;
+ end for;
+
+ /*If no random collections of points in general position found, then there are probably none in general position. So try to rigorously prove this. This step can take quite some time for large q*/
+ for x,y in CartesianProduct(Looping) do
+  P:=PStart;
+  for t in [1..#x] do
+   for j in [0..max-1] do
+    P:=P join { [x[t]^(q^j), y[t]^(q^j), 1] };  /*Take the conjugates of the given point as required*/
+   end for;	
+  end for;
+  if #P eq r and InGeneralPos(P,L) then
+   if display then
+    print q, T, P;
+    return true;
+   end if;
+   return q, T, true;
+  end if;
+ end for;
+ 
+ /*No points in general position*/
+ return q, T, false; 
+end function;
+
+/* The programme now verifies the claims in the paper regarding existence and non-existence of various points in general position. This takes a couple of hours. To play around with it by yourself, set "Check_claims" at the start to be false. */
+
+display:=false;
+SetOutputFile("ExistencedP1Index8Smallq.txt");
+print "We verify the claims in the paper regarding existence of collections of closed points in general position.";
+print "The output is: q, Type of configuration, Does this required configuration exist?";
+print "Examples of types: [7] = 7 rational points in general position. [4,0,1] = 4 rational points and a closed point of degree 3";
+print " ";
+
+print "Del Pezzo surfaces of degree 1 of index 8.";
+/*Type 93*/
+T := [4,2];
+for q in [2..15] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 95*/
+T := [2,3];
+for q in [2..10] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 96*/
+T := [3,1,1];
+for q in [2..8] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 98*/
+T := [0,4];
+for q in [2..6] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 99*/
+T := [1,2,1];
+for q in [2..7] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 100*/
+T := [2,0,2];
+for q in [2..5] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 101*/
+T := [2,1,0,1];
+for q in [2..6] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 103*/
+T := [0,1,2];
+for q in [2..6] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 104*/
+T := [0,2,0,1];
+for q in [2..6] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 105*/
+T := [1,0,1,1];
+for q in [2..3] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 106*/
+T := [1,1,0,0,1];
+for q in [2..6] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 109*/
+T := [0,0,1,0,1];
+for q in [2..3] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+/*Type 110*/
+T := [0,1,0,0,0,1];
+for q in [2..3] do 
+ if IsPrimePower(q) then
+  HasPointsInGenPos(q,T,display);  
+ end if;
+end for;
+print " ";
+
+
+
+
+
+
+
