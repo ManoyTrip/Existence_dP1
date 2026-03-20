@@ -1,3 +1,5 @@
+/* This Magma code accompanies the article M.T. Trip - Existence of Minimal del Pezzo Surfaces of Degree 1 with Conic Bundles over Finite Fields.*/
+
 1. 
 Subgroup order: 4. Measure^(-1): 15360
 Orbits: 2^30 4^45 
