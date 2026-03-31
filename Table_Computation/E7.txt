@@ -103,7 +103,7 @@ for i in [1..numberOfClasses] do
   Append(~traceListdP2, a);
 end for;
 
-SetOutputFile("OutputE7.txt");
+SetOutputFile("OutputdP2.txt");
 /*Create formatted output of all the computed properties*/
 for i in [1..numberOfClasses] do
   printf "%o. \n", i;
