@@ -51,10 +51,10 @@ q := 1801;
 AIMwe6 := AbsolutelyIrreducibleModules(we6, FiniteField(q));
 Rwe6 := Representation(AIMwe6[3]);
 
-save "ModuleE6E7E8";
+save "RepresentationE6E7E8";
 
 AIMwe6 := 0;
 AIMwe7 := 0;
 AIMwe8 := 0;
 
-save "ModuleE6E7E8_noAIM";
+save "RepresentationE6E7E8_noAIM";
