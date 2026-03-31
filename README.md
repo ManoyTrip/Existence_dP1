@@ -1,5 +1,6 @@
 # Existence_dP1
 This repository contains two folders with Magma code accompanying the article "Existence of minimal del Pezzo surfaces of degree 1 with conic bundles over finite fields" - Manoy T. Trip. 
+
 NB: The code was executed in Magma v28-25. Using different versions of Magma may result in differing output (notably, a difference in the ordering of the conjugacy classes of W(E_8)).
 
 The folder Table_Computation contains Magma files related to the computation of properties associated with each type of del Pezzo surface of degree 1 over Fq.
